@@ -4,14 +4,16 @@
 		<div class="about-section">
 			<h2>The Creators</h2>
 			<p>
-				This site is put together by one of the hosts, Tanner Woody.
-				However, this site would not be possible without the hard work of Betsy Spencer.
+				This site is put together by, Tanner Woody, himself.
+				This site would not be possible without the support of Tanner's spouse, Betsy Spencer.
 			</p>
 			<p>
 				Tanner wrote this site using Vue, firebase, jest, vuex, and other technologies.
 			</p>
 			<p>
-				Betsy and Tanner met in Iowa, married in New York, and live in Portland.
+				Betsy and Tanner met in Iowa, married in New York, and live in West Linn,
+				in the Bolton neighborhood.
+				In Bolton, they grow their bio and foster family.
 				They have three pets:
 				<ol>
 					<li>
@@ -26,37 +28,7 @@
 				</ol>
 			</p>
 		</div>
-		<div class="about-section">
-			<!-- TODO: Componentize -->
-			<!-- TODO: Fix div centering on md -->
-			<h2>Outreach</h2>
-			<div class="statistics-section">
-				<div class="statistic">
-					<div class="description">
-						Human Connections
-					</div>
-					<div class="value">
-						33
-					</div>
-				</div>
-				<div class="statistic">
-					<div class="description">
-						Pets Pampered
-					</div>
-					<div class="value">
-						12
-					</div>
-				</div>
-				<div class="statistic">
-					<div class="description">
-						5 Star Reviews
-					</div>
-					<div class="value">
-						24 (24/25)
-					</div>
-				</div>
-			</div>
-		</div>
+		<div class="about-section"/>
 	</div>
 </template>
 

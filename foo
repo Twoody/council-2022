@@ -1,9 +1,0 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyC-LnFGpldNIKPux-76PQBR1Z8WDYCGsGg",
-  authDomain: "council-95b50.firebaseapp.com",
-  projectId: "council-95b50",
-  storageBucket: "council-95b50.appspot.com",
-  messagingSenderId: "356255366027",
-  appId: "1:356255366027:web:c227462d21918bbdff0d8e",
-  measurementId: "G-CBR0Q6TPKP"
-};

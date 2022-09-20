@@ -91,9 +91,9 @@ export default {
 				apiKey: "AIzaSyC-LnFGpldNIKPux-76PQBR1Z8WDYCGsGg",
 				appId: "1:356255366027:web:c227462d21918bbdff0d8e",
 				authDomain: "council-95b50.firebaseapp.com",
-				projectId: "council-95b50",
 				measurementId: "G-CBR0Q6TPKP",
 				messagingSenderId: "356255366027",
+				projectId: "council-95b50",
 				storageBucket: "council-95b50.appspot.com",
 			}
 
@@ -176,7 +176,7 @@ html, body {
 #app {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: @color-primary-triadic-1;
+	background-color: @color-primary-background;
 	color: @myblack;
 	display: flex;
 	flex-direction: column;
@@ -190,13 +190,13 @@ html, body {
 
 }
 #bottom-banner {
-	background-color: @color-primary-triadic-3;
+	background-color: @color-third-background;
 	bottom: 0;
 	height: 50px;
 	width: 100%;
 }
 #content-wrapper {
-	background-color: @color-primary-triadic-1;
+	background-color: @color-primary-background;
 	overflow: scroll;
 }
 
@@ -209,12 +209,12 @@ html, body {
 }
 
 #nav-wrapper {
-	background-color: @color-primary-triadic-2;
+	background-color: @color-third-background;
 }
 
 #top-banner {
 	align-items: center;
-	background-color: @color-purple;
+	background-color: @color-secondary-background;
 	color: @myblack;
 	cursor: pointer;
 	display: flex;

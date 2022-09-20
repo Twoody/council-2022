@@ -14,27 +14,6 @@ The general navbar for our project
 			>
 				About
 			</router-link>
-			<!-- TODO: Reasses manual page for actual manuals-->
-			<!--
-			<router-link
-				class="nav-item"
-				to="/manual"
-			>
-				Manual
-			</router-link>
- -->
-			<router-link
-				class="nav-item"
-				to="/maps"
-			>
-				Maps
-			</router-link>
-			<router-link
-				class="nav-item"
-				to="/amenities"
-			>
-				Amenities
-			</router-link>
 		</div>
 	</div>
 </template>
@@ -69,14 +48,17 @@ export default {
 
 		.nav-item {
 			margin: 5px;
+			text-decoration: none;
 		}
 	}
 }
 a {
 	font-weight: bold;
-	color: #2c3e50;
+	color: @color-third-font;
 }
 a.router-link-exact-active {
-	color: #42b983;
+	color: @color-pastel-green;
+	font-size: 19px;
+	text-decoration: underline !important;
 }
 </style>
