@@ -18,7 +18,7 @@
 						<li>NO Tolling</li>
 						<li>Proper 205 Restructure</li>
 						<li>Highway 43 Roundabouts</li>
-						<li>Heighway 43 Transfer of Ownership</li>
+						<li>Highway 43 Transfer of Ownership</li>
 						<li>The Waterfront Project</li>
 						<li>Fostering Community Ties</li>
 						<li>Riverside High School Organization</li>
@@ -130,12 +130,6 @@ export default {
 		text-transform: uppercase;
 	}
 
-	.odd-section {
-		background: @color-primary-background;
-	}
-	.even-section {
-		background: @color-secondary-background;
-	}
 	.accordion-sections {
 		align-items: center;
 		align-content: center;
@@ -148,15 +142,7 @@ export default {
 		width: 100%;
 
 		.flex-box {
-			padding-top: 20px;
 			text-align: left;
-
-			.accordion-wrapper {
-				margin: 7px;
-			}
-			.question-accordion-wrapper {
-				max-width: 100%;
-			}
 		}
 	}
 	.hero {
