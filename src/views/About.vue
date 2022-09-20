@@ -1,6 +1,8 @@
 <template>
 	<div class="about-wrapper">
-		<h1>About Tanner Woody</h1>
+		<div class="content-section even-section">
+			<h1>About Tanner Woody</h1>
+		</div>
 		<div class="content-section odd-section">
 			<h2>Endorsements</h2>
 			<div class="flex-box">
@@ -68,10 +70,6 @@ export default {
 	flex-direction: column;
 	width: 100%;
 
-	h1 {
-		flex-grow:1;
-		width: 100%;
-	}
 	.content-section {
 		align-items: center;
 		align-content: center;
@@ -86,6 +84,18 @@ export default {
 		.flex-box {
 			text-align: left;
 		}
+		&:has(h1) {
+			padding-bottom: 20px;
+		}
 	}
+	h1 {
+		all: unset;
+		flex-grow:1;
+		font-size: 55px;
+		font-weight: 900;
+		text-transform: uppercase;
+		width: 100%;
+	}
+
 }
 </style>
