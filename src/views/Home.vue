@@ -2,7 +2,13 @@
 	<div class="home-wrapper">
 		<div class="hero flex-box">
 			<h2 class="flex-item">
-				Hi, I am Tanner Woody.
+				<a
+					href='mailto:tanner.l.woody@gmail.com'
+					target="_blank"
+				>
+					Hi, I am Tanner Woody.
+				</a>
+				<br/>
 			</h2>
 		</div>
 		<div class="accordion-sections even-section">
@@ -58,7 +64,7 @@
 					Right now, West Linn is undergoing "Envisionment Planning" for the Waterfront Project. Tanner will represent Bolton and West Linn by:
 					<ul>
 						<li>Strengthening the waterfront plan, for Bolton residents</li>
-						<li>Building better business and provide more services</li>
+						<li>Building better business and providing more services</li>
 						<li>Advocating for existing businesses</li>
 					</ul>
 				</p>
@@ -83,7 +89,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="accordion-sections odd-section">
+		<div class="accordion-sections odd-section hero hero-3">
 			<h2>
 				Environment
 			</h2>
@@ -157,11 +163,25 @@ export default {
 		padding-top: 34px;
 		position: relative;
 		margin-bottom: 21px;
+
+		a {
+			font-size: 38px;
+			font-weight: 900;
+			text-transform: uppercase;
+		}
 	}
 	.hero-2 {
 		background-image: url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/council-ice-cream.jpg?alt=media&token=e3be91be-d0fd-44e4-a69a-4448b5781e7a");
 		background-size: contain;
 		margin-top: 21px;
+	}
+	.hero-3 {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .6)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-and-betsy.jpg?alt=media&token=ae6a4ee8-3f4f-45c6-8d8c-a1e989c31ee4");
+		background-size: cover;
+		color: @color-pastel-blue;
+		font-size: 17px;
+		font-weight: 700;
+		min-height: 911px;
 	}
 
 }

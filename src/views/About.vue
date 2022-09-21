@@ -14,6 +14,19 @@
 			</div>
 		</div>
 		<div class="content-section even-section">
+			<h2>Credentials</h2>
+			<div class="flex-box">
+				<ul>
+					<li>West Linn Tax Increment Finance (TIF) Committee Advisor</li>
+					<li>Bolton Neighborhood Association (BNA) Member</li>
+					<li>SOLVE Member</li>
+					<li>BA Computer Science</li>
+					<li>BS Mathematics</li>
+					<li>University of Iowa Residential Halls President</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content-section odd-section">
 			<h2>The Site</h2>
 			<div class="flex-box">
 				<p class="flex-item">
@@ -26,13 +39,15 @@
 				</p>
 			</div>
 		</div>
-		<div class="content-section odd-section">
+		<div class="content-section even-section hero">
 			<h2>Family</h2>
 			<div class="flex-box">
 				<p class="flex-item">
 					Betsy and Tanner met in Iowa, married in New York,
 					and live in West Linn, in the Bolton neighborhood.
-					In Bolton, they grow their bio and foster family.
+					In Bolton, they are growing their bio and foster family.
+				</p>
+				<p class="flex-item">
 					They have three pets:
 					<ol>
 						<li>
@@ -47,6 +62,12 @@
 					</ol>
 				</p>
 			</div>
+		</div>
+		<div class="content-section odd-section hero hero-2">
+			<h2>Dogs</h2>
+		</div>
+		<div class="content-section even-section hero hero-3">
+			<h2>Cat</h2>
 		</div>
 	</div>
 </template>
@@ -87,11 +108,35 @@ export default {
 		&:has(h1) {
 			padding-bottom: 20px;
 		}
+		&.hero {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .6)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-dog-wedding.jpg?alt=media&token=3c30ad68-489f-491d-9bc0-0d8de1b4d06c");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: @color-pastel-blue;
+			font-size: 17px;
+			font-weight: 700;
+			min-height: 400px;
+			min-width: 100%;
+			padding-top: 34px;
+			position: relative;
+			margin-bottom: 21px;
+			li {
+				color: @color-pastel-blue;
+				font-weight: 900;
+			}
+		}
+		&.hero-2 {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-dogs.jpg?alt=media&token=87bec6b3-3902-41c0-b69a-afcdabd17b25");
+		}
+		&.hero-3 {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-cat.jpg?alt=media&token=8f26f2ba-c511-4908-a204-e01012b24b28");
+		}
 	}
 	h1 {
 		all: unset;
 		flex-grow:1;
-		font-size: 55px;
+		font-size: 35px;
 		font-weight: 900;
 		text-transform: uppercase;
 		width: 100%;
