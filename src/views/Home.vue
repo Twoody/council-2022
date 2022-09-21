@@ -3,12 +3,12 @@
 		<div class="hero flex-box">
 			<h2 class="flex-item">
 				<a
-					href='mailto:tanner.l.woody@gmail.com'
+					href="mailto:tanner.l.woody@gmail.com"
 					target="_blank"
 				>
 					Hi, I am Tanner Woody.
 				</a>
-				<br/>
+				<br>
 			</h2>
 		</div>
 		<div class="accordion-sections even-section">
