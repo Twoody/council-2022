@@ -1,11 +1,22 @@
 import {resolve} from "path";
 import {defineConfig} from "vite";
+import { SchemaOrg } from '@vueuse/schema-org-vite'
+
 import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
 	plugins: [
 		vue(),
 		//antd introduces configuration on demand
+		SchemaOrg({
+			// Note: mocking is disable as it's expiremental
+			mock: false,
+			// use simple types
+			full: false,
+			// write type alias to tsconfig.json
+			dts: true,
+		 }),
+
 	],
 	resolve: {
 	//Path alias configuration

@@ -1,5 +1,14 @@
 <template>
 	<div id="app">
+		<!-- @todo Select Identity: https://vue-schema-org.netlify.app/guide/guides/identity -->
+		<SchemaOrgOrganization
+			name="Tanner Woody"
+			logo="/assets/imgs/council-ice-cream.png"
+			:same-as="schemaSameAs"
+		/>
+		<SchemaOrgWebSite name="Vote Tanner Woody" />
+		<SchemaOrgWebPage />
+
 		<!-- TODO: Tie into vue comps -->
 		<AppSection
 			:isShowing="$store.state.layout.isShowingBanner"
@@ -65,6 +74,12 @@ export default {
 	{
 		return {
 			isNavCollapsed: true,
+			schemaSameAs: [
+				"https://github.com/twoody",
+				"https://www.linkedin.com/in/tannerwoody/",
+				"https://www.strava.com/athletes/9502204",
+				"https://www.facebook.com/tanner.woody.9/",
+			],
 		}
 	},
 	computed: {},

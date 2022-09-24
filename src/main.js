@@ -3,6 +3,9 @@ import App from "./App.vue"
 
 import router from "./router"
 import store from "./store/store.js"
+import { installSchemaOrg } from "@vueuse/schema-org-vite/vite"
+
+// Fontawesome
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { faClipboard } from "@fortawesome/free-solid-svg-icons"
@@ -29,6 +32,12 @@ const app = createApp(App)
 app.use(store)
 app.use(router)
 app.component("font-awesome-icon", FontAwesomeIcon)
+installSchemaOrg({
+	app,
+	router, 
+}, {
+	canonicalHost: "https://woodyforcouncil.com",
+})
 
 // Mount the app
 app.mount("#app")
