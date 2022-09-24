@@ -15,13 +15,19 @@ The general navbar for our project
 				About
 			</router-link>
 		</div>
+		<EmailButton />
 	</div>
 </template>
 
 <script>
+import EmailButton from "@/components/buttons/EmailButton"
 
 export default {
 	name: "NavBar",
+	components:
+	{
+		EmailButton,
+	},
 }
 </script>
 

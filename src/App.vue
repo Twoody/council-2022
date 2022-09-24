@@ -48,6 +48,7 @@
 </template>
 
 <script>
+import { getAnalytics, logEvent } from "firebase/analytics"
 import { initializeApp } from "firebase/app"
 
 import AppSection from "components/common/AppSection"
@@ -98,7 +99,10 @@ export default {
 			}
 
 			// Get a Firestore instance
-			initializeApp(firebaseConfig)
+			const app = initializeApp(firebaseConfig)
+			const analytics = getAnalytics(app)
+			logEvent(analytics, "site_view")
+
 		}
 		catch (e)
 		{

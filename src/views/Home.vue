@@ -2,13 +2,7 @@
 	<div class="home-wrapper">
 		<div class="hero flex-box">
 			<h2 class="flex-item">
-				<a
-					href="mailto:tanner.l.woody@gmail.com"
-					target="_blank"
-				>
-					Hi, I am Tanner Woody.
-				</a>
-				<br>
+				Hi, I am Tanner Woody.
 			</h2>
 		</div>
 		<div class="accordion-sections even-section">
@@ -28,7 +22,7 @@
 						<li>The Waterfront Project</li>
 						<li>Fostering Community Ties</li>
 						<li>Riverside High School Organization</li>
-						<li>Drive Local Business Success</li>
+						<li>Driving Local Business Success</li>
 					</ul>
 				</p>
 				<p class="flex-item">
@@ -51,7 +45,7 @@
 				<p class="flex-item">
 					Tanner believes that tolling needs to be done with equal payments in mind,
 					and as many of us frequent Oregon City for practical services,
-					<b>ODOTs tolling does not effect us equally.</b>
+					<b>ODOTs tolling does not affect us equally.</b>
 				</p>
 			</div>
 		</div>
@@ -61,7 +55,8 @@
 			</h2>
 			<div class="flex-box">
 				<p class="flex-item">
-					Right now, West Linn is undergoing "Envisionment Planning" for the Waterfront Project. Tanner will represent Bolton and West Linn by:
+					Right now, West Linn is undergoing "Envisionment Planning" for the
+					Waterfront Project. Tanner will represent Bolton and West Linn by:
 					<ul>
 						<li>Strengthening the waterfront plan, for Bolton residents</li>
 						<li>Building better business and providing more services</li>
@@ -80,7 +75,9 @@
 			</h2>
 			<div class="flex-box">
 				<p class="flex-item">
-					Tanner believes that tolling needs to be done with equal payments in mind, and as many of us frequent Oregon City for practical services, <b>ODOTs tolling does not effect us equally.</b>
+					Tanner believes that tolling needs to be done with equal payments in mind,
+					and as many of us frequent Oregon City for practical services,
+					<b>ODOTs tolling does not affect us equally.</b>
 				</p>
 				<p class="flex-item">
 					Anyone can belong anywhere, and residents deserve to be safe in our community.
@@ -101,7 +98,7 @@
 					SOLVE and community involvement display the importance of these assets. 
 				</p>
 				<p class="flex-item">
-					Tanner will work with our existing council, ODOT, P&R, and community to maintain
+					Tanner will work with our existing council, ODOT, P&amp;R, and community to maintain
 					and preserve our parks and recreational facilities.
 				</p>
 			</div>
@@ -110,14 +107,11 @@
 </template>
 
 <script>
-import CheckInAndOutAccordion from "@/components/entities/questions/CheckInAndOutAccordion"
 
 export default {
 	name: "Home",
 	components:
-	{
-		CheckInAndOutAccordion,
-	},
+	{},
 }
 </script>
 

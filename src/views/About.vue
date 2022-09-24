@@ -127,7 +127,7 @@ export default {
 			}
 		}
 		&.hero-2 {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-dogs.jpg?alt=media&token=87bec6b3-3902-41c0-b69a-afcdabd17b25");
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-dogs.jpg?alt=media&token=42d00ac1-3511-4996-b9b3-43304b62149e");
 		}
 		&.hero-3 {
 			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-cat.jpg?alt=media&token=8f26f2ba-c511-4908-a204-e01012b24b28");
