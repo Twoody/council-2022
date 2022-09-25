@@ -1,6 +1,8 @@
 import { createApp } from "vue"
 import App from "./App.vue"
 
+import { createHead } from "@vueuse/head"
+
 import router from "./router"
 import store from "./store/store.js"
 import { installSchemaOrg } from "@vueuse/schema-org-vite/vite"
@@ -27,10 +29,15 @@ library.add(faGoogle)
 library.add(faSpinner)
 library.add(faStar)
 
+// Prep the head
+const head = createHead()
+
+
 // Prep the app
 const app = createApp(App)
 app.use(store)
 app.use(router)
+app.use(head)
 app.component("font-awesome-icon", FontAwesomeIcon)
 installSchemaOrg({
 	app,
