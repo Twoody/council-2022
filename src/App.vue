@@ -59,9 +59,9 @@
 <script>
 import { getAnalytics, logEvent } from "firebase/analytics"
 import { initializeApp } from "firebase/app"
-import { defineComponent, computed, reactive } from "vue"
-import { useHead } from "@vueuse/head"
-import { SchemaOrgOrganization, SchemaOrgWebPage, SchemaOrgWebSite } from '@vueuse/schema-org/dist/runtime-simple/components/nodes.mjs'
+import {SchemaOrgOrganization,
+	SchemaOrgWebPage,
+	SchemaOrgWebSite} from "@vueuse/schema-org/dist/runtime-simple/components/nodes.mjs"
 
 import AppSection from "components/common/AppSection"
 import NavBar from "components/nav/NavBar"
@@ -73,25 +73,9 @@ export default {
 		AppSection,
 		NavBar,
 		SchemaOrgOrganization,
-		SchemaOrgWebSite,
 		SchemaOrgWebPage,
+		SchemaOrgWebSite,
 	},
-	//setup() {
-	//	const siteData = reactive({
-	//		title: `My website`,
-	//		description: `My beautiful website`,
-	//	})
-	//	useHead({
-	//		// Can be static or computed
-	//		title: computed(() => siteData.title),
-	//		meta: [
-	//			{
-	//				name: `description`,
-	//				content: computed(() => siteData.description),
-	//			},
-	//		],
-	//	})
-	//},
 	data: function()
 	{
 		return {

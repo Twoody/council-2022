@@ -32,7 +32,6 @@ library.add(faStar)
 // Prep the head
 const head = createHead()
 
-
 // Prep the app
 const app = createApp(App)
 app.use(store)
