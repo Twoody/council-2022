@@ -61,6 +61,10 @@ import { getAnalytics, logEvent } from "firebase/analytics"
 import { initializeApp } from "firebase/app"
 import { defineComponent, computed, reactive } from "vue"
 import { useHead } from "@vueuse/head"
+//import { SchemaOrgWebPage, SchemaOrgWebSite } from '@vueuse/schema-org/dist/runtime-simple/components/nodes.mjs'
+//import { SchemaOrgWebPage, SchemaOrgWebSite } from '@vueuse/schema-org-vite/dist/index.mjs'
+//import { SchemaOrgWebPage, SchemaOrgWebSite } from '@vueuse/schema-org/dist/runtime-mock/components.mjs'
+//import { SchemaOrgWebPage, SchemaOrgWebSite } from '@vueuse/schema-org/dist/runtime-simple/components.mjs'
 
 
 import AppSection from "components/common/AppSection"

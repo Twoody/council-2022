@@ -15,7 +15,7 @@ export default defineConfig({
 			// use simple types
 			full: false,
 			// write type alias to tsconfig.json
-			dts: true,
+			dts: false,
 		 }),
 
 	],
