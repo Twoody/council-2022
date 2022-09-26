@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import MyButton from "@/components/buttons/MyButton"
+import MyButton from "components/buttons/MyButton"
 
 export default {
 	name: "EmailButton",

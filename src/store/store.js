@@ -1,8 +1,8 @@
 import { createStore } from "vuex"
 
 // Sub Modules
-import layout from "@/store/layout"
-import user from "@/store/user"
+import layout from "store/layout"
+import user from "store/user"
 
 /**
  * @returns {object} Initial state for all of our properties to easily be reset
