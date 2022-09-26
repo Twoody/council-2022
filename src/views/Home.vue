@@ -175,6 +175,7 @@ export default {
 		color: @color-pastel-blue;
 		font-size: 17px;
 		font-weight: 700;
+		margin-bottom: 0;
 		min-height: 911px;
 	}
 
