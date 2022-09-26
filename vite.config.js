@@ -17,7 +17,6 @@ export default defineConfig({
 			// write type alias to tsconfig.json
 			dts: false,
 		 }),
-
 	],
 	resolve: {
 	//Path alias configuration
