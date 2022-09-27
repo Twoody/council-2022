@@ -31,7 +31,7 @@
 					Tanner will provide that representation.
 				</p>
 				<p class="flex-item">
-					Currently, Tanner is on the Bolton Neighborhood Association Board and on
+					Currently, Tanner is an active member of the Bolton Neighborhood Association and on
 					the Tax Increment Financing (TIF) Advisory Committee. We need to extend this
 					representation to the City Council itself, to make ODOT work for us.
 				</p>
