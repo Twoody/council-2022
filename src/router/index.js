@@ -14,6 +14,11 @@ const routes = [
 		path: "/about",
 	},
 	{
+		component: () => import(/* webpackChunkName: "about" */ "../views/Events.vue"),
+		name: "events",
+		path: "/events",
+	},
+	{
 		component: NotFound,
 		path: "/:catchAll(.*)",
 		name: "404",
