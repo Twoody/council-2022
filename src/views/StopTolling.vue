@@ -42,8 +42,6 @@
 					message in their meeting summary and message to the council, and
 					remove the parts of the email asking to speak.
 				</p>
-			</div>
-			<div class="flex-box">
 				<h3 class="flex-item">
 					Email Body
 				</h3>
@@ -74,9 +72,8 @@
 					If I take 4 trips a week, that is $16 a day, $80 a week, and $320
 					a month.
 				</p>
-			</div>
-			<div class="flex-box quote-box">
-				<blockquote class="flex-item">
+			<div class="quote-box flex-item">
+				<blockquote>
 					<p>
 						Hello,
 					</p>
@@ -114,7 +111,6 @@
 					</p>
 				</blockquote>
 			</div>
-			<div class="flex-box">
 				<h3 class="flex-item">
 					Email Subject
 				</h3>
@@ -124,8 +120,6 @@
 					comments will be piled together as a summary for the board and
 					meeting summary, at a minimum.
 				</p>
-			</div>
-			<div class="flex-box">
 				<h3 class="flex-item">
 					Email Recipient
 				</h3>
@@ -138,8 +132,6 @@
 						Hannah.Williams@odot.state.or.us
 					</a>
 				</p>
-			</div>
-			<div class="flex-box">
 				<h3 class="flex-item">
 					Informational Links
 				</h3>
@@ -203,7 +195,7 @@ export default {
 .stop-tolling-wrapper {
 	display: flex;
 	flex-direction: column;
-	width: @maxwidth;
+	width: 100%;
 
 	.content-section {
 		align-items: center;
@@ -214,21 +206,19 @@ export default {
 		justify-content: center;
 		padding-bottom: 50px;
 		padding-top: 20px;
-			width: @maxwidth;
 
 		.flex-box {
 			margin-left: 22px;
 			margin-right: 22px;
 			text-align: left;
-			width: @maxwidth;
 
-			&.quote-box {
-				background: #fee8b9;
-				border-radius: 7px;
-				padding: 1em;
-			}
 			.flex-item {
 			}
+		}
+		.quote-box {
+			background: #fee8b9;
+			border-radius: 7px;
+			padding: 1em;
 		}
 		&:has(h1) {
 			padding-bottom: 20px;
