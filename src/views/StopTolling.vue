@@ -171,6 +171,22 @@
 								Current Planned Toll Rates
 							</a> 
 						</li>
+						<li>
+							<a
+								href="https://www.oregon.gov/odot/tolling/Pages/Latest-News.aspx?fbclid=IwAR3z8lzQq_r35_AIDfZImz9M4prglh-ATMYEmJm24MxpzTat1-b5gnzRjhs"
+								target="_blank"
+							>
+								Latest from ODOT Tolling Committee
+							</a> 
+						</li>
+						<li>
+							<a
+								href="https://www.oregon.gov/odot/Planning/Documents/OHP%20Policy%20Amendment%20Draft%20for%20Public%20Review.pdf?fbclid=IwAR3aElVJdG3xtJv0JApsGNI7mD6DhueygzKsESgHxN8pMgBu8cE8575rspc"
+								target="_blank"
+							>
+								Current Tolling Draft
+							</a> 
+						</li>
 					</ul>
 				</div>
 			</div>
