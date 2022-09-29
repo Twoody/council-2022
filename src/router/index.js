@@ -28,6 +28,12 @@ const routes = [
 		name: "home",
 		path: "/",
 	},
+	{
+		component: () => import(/* webpackChunkName: "about" */ "../views/StopTolling.vue"),
+		name: "stopTolling",
+		path: "/stop-tolling",
+	},
+
 ]
 
 const router = createRouter({
