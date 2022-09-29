@@ -14,6 +14,12 @@ The general navbar for our project
 			>
 				About
 			</router-link>
+			<router-link
+				class="nav-item"
+				to="/stop-tolling"
+			>
+				<font-awesome-icon icon="fa-sharp fa-solid fa-ban" />Tolling
+			</router-link>
 		</div>
 		<EmailButton />
 	</div>

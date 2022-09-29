@@ -8,6 +8,7 @@ import store from "./store/store.js"
 import { installSchemaOrg } from "@vueuse/schema-org-vite/vite"
 
 // Fontawesome
+import { faBan } from "@fortawesome/free-solid-svg-icons"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { faClipboard } from "@fortawesome/free-solid-svg-icons"
@@ -20,6 +21,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core"
 
 // Font awesome
+library.add(faBan)
 library.add(faCheck)
 library.add(faChevronRight)
 library.add(faClipboard)

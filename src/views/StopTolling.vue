@@ -11,7 +11,7 @@
 		</div>
 		<div class="content-section odd-section">
 			<div class="subheader">
-				2022-10-24
+				DEADLINE: 2022-10-21
 			</div>
 			<h2>Regional Tolling Advisory Committee</h2>
 			<div class="flex-box">
@@ -49,9 +49,30 @@
 				</h3>
 				<p class="flex-item">
 					Please copy the below text, and then write a minimum of a couple
-					of sentences explaining your dependency on 205 (for example,
-					"I am obliged to take 3 to 4 trips a weekday across 205, which
-					is $240 to $320 a month!").
+					of sentences explaining your dependency on 205. For example,
+					<b>"I am obliged to take 3 to 4 trips a weekday across 205, which
+						is $240 to $320 a month!"</b>
+				</p>
+				<p class="flex-item">
+					The breakdown of the math above is:
+					<br>
+					One toll entry is $2.20 (
+					<em>
+						<a
+							href="https://www.oregon.gov/odot/tolling/Documents/2022_August-Update.pdf"
+							target="_blank"
+						>
+							drafted, subject to change
+						</a>
+					</em>
+					).
+					One toll exit is the same price.
+					That is roughly $4 a trip. 
+					<br>
+					If I take 3 trips a week, that is $12 a day, $60 a week, and $240 
+					<br>
+					If I take 4 trips a week, that is $16 a day, $80 a week, and $320
+					a month.
 				</p>
 			</div>
 			<div class="flex-box quote-box">
@@ -84,6 +105,9 @@
 						priority, equity. The effects of tolling  do not align with
 						your third goal, congestion relief, as we will see increased
 						congestion on our side roads.
+					</p>
+					<p>
+						<b>&lt;Your subjective statement goes here&gt;</b>
 					</p>
 					<p>
 						Please provide exemptions from West Linn for tolling.
@@ -145,6 +169,14 @@
 								target="_blank"
 							>
 								Tolling Meetings
+							</a> 
+						</li>
+						<li>
+							<a
+								href="https://www.oregon.gov/odot/tolling/Documents/2022_August-Update.pdf"
+								target="_blank"
+							>
+								Current Planned Toll Rates
 							</a> 
 						</li>
 					</ul>
