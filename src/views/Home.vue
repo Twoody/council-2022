@@ -142,6 +142,8 @@ export default {
 		width: 100%;
 
 		.flex-box {
+			margin-left: 17px;
+			margin-right: 17px;
 			text-align: left;
 		}
 	}

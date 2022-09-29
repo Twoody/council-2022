@@ -217,7 +217,11 @@ export default {
 		width: 100%;
 
 		.flex-box {
+			margin-left: 17px;
+			margin-right: 17px;
 			text-align: left;
+			width: auto !important;
+
 			&.quote-box {
 				background: #fee8b9;
 				border-radius: 7px;
