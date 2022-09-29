@@ -72,45 +72,45 @@
 					If I take 4 trips a week, that is $16 a day, $80 a week, and $320
 					a month.
 				</p>
-			<div class="quote-box flex-item">
-				<blockquote>
-					<p>
-						Hello,
-					</p>
-					<p>
-						My name is _______, and I am writing about tolling. 
-					</p>
-					<p>
-						I am requesting time to speak October 24th with the Regional
-						Toll Advisory Committee. I would like to discuss the impact
-						tolling has on me. If my request is denied, take the
-						following as comment for both the Committee's summary
-						and meeting summary:
-					</p>
-					<p>
-						The Equity and Mobility Committee, a volunteer ODOT group,
-						has 15 members. Currently the only one listed near our area
-						is Abe Molland, with Clackamas County Health and
-						Transportation. The development of the tolling plan in 
-						Clackamas County is grossly underrepresented. This is not equity.
-					</p>
-					<p>
-						The ODOT Urban Mobility Office was formed a few years ago, with
-						the current goals and priorities of "advancing equity, climate
-						change, congestion relief, and safety goals."
-						The effects of tolling West Linn do not align with your first
-						priority, equity. The effects of tolling  do not align with
-						your third goal, congestion relief, as we will see increased
-						congestion on our side roads.
-					</p>
-					<p>
-						<b>&lt;Your subjective statement goes here&gt;</b>
-					</p>
-					<p>
-						Please provide exemptions from West Linn for tolling.
-					</p>
-				</blockquote>
-			</div>
+				<div class="quote-box flex-item">
+					<blockquote>
+						<p>
+							Hello,
+						</p>
+						<p>
+							My name is _______, and I am writing about tolling. 
+						</p>
+						<p>
+							I am requesting time to speak October 24th with the Regional
+							Toll Advisory Committee. I would like to discuss the impact
+							tolling has on me. If my request is denied, take the
+							following as comment for both the Committee's summary
+							and meeting summary:
+						</p>
+						<p>
+							The Equity and Mobility Committee, a volunteer ODOT group,
+							has 15 members. Currently the only one listed near our area
+							is Abe Molland, with Clackamas County Health and
+							Transportation. The development of the tolling plan in 
+							Clackamas County is grossly underrepresented. This is not equity.
+						</p>
+						<p>
+							The ODOT Urban Mobility Office was formed a few years ago, with
+							the current goals and priorities of "advancing equity, climate
+							change, congestion relief, and safety goals."
+							The effects of tolling West Linn do not align with your first
+							priority, equity. The effects of tolling  do not align with
+							your third goal, congestion relief, as we will see increased
+							congestion on our side roads.
+						</p>
+						<p>
+							<b>&lt;Your subjective statement goes here&gt;</b>
+						</p>
+						<p>
+							Please provide exemptions from West Linn for tolling.
+						</p>
+					</blockquote>
+				</div>
 				<h3 class="flex-item">
 					Email Subject
 				</h3>
