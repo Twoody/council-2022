@@ -203,7 +203,7 @@ export default {
 .stop-tolling-wrapper {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: @maxwidth;
 
 	.content-section {
 		align-items: center;
@@ -214,20 +214,21 @@ export default {
 		justify-content: center;
 		padding-bottom: 50px;
 		padding-top: 20px;
-		width: 100%;
+			width: @maxwidth;
 
 		.flex-box {
-			margin-left: 17px;
-			margin-right: 17px;
+			margin-left: 22px;
+			margin-right: 22px;
 			text-align: left;
-			width: auto !important;
+			width: @maxwidth;
 
 			&.quote-box {
 				background: #fee8b9;
 				border-radius: 7px;
 				padding: 1em;
 			}
-			width: 100%;
+			.flex-item {
+			}
 		}
 		&:has(h1) {
 			padding-bottom: 20px;
