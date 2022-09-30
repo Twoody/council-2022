@@ -49,36 +49,36 @@
 		</AppSection>
 		<AppSection centered is-showing >
 			<div class="bottom-banner">
-				<div class='flex-box cheat'>
-					<div class='flex-item'>
-							<MyButton
-								class="footer-button"
-								pill
+				<div class="flex-box cheat">
+					<div class="flex-item">
+						<MyButton
+							class="footer-button"
+							pill
+						>
+							<a
+								class="linked"
+								:href="instagram"
+								target="_blank"
 							>
-								<a
-									class="linked"
-									:href="instagram"
-									target="_blank"
-								>
-									<span>Facebook</span>
-								</a>
-							</MyButton>
-							<MyButton
-								class="footer-button"
-								pill
+								<span>Facebook</span>
+							</a>
+						</MyButton>
+						<MyButton
+							class="footer-button"
+							pill
+						>
+							<a
+								class="linked"
+								:href="instagram"
+								target="_blank"
 							>
-								<a
-									class="linked"
-									:href="instagram"
-									target="_blank"
-								>
-									<span>Instagram</span>
-								</a>
-							</MyButton>
+								<span>Instagram</span>
+							</a>
+						</MyButton>
 					</div>
-					<div class='flex-item'>
-						<div class='flex-box cheat'>
-							<div class='flex-item'>
+					<div class="flex-item">
+						<div class="flex-box cheat">
+							<div class="flex-item">
 								Copyright
 								<font-awesome-icon icon="fa fa-copyright" />
 								2022 Tanner Woody All Rights Reserved
@@ -116,8 +116,8 @@ export default {
 	data: function()
 	{
 		return {
-			facebooke: 'https://www.facebook.com/tanner.woody.9/',
-			instagram: 'https://www.instagram.com/candidate_tanner_woody/?hl=en',
+			facebooke: "https://www.facebook.com/tanner.woody.9/",
+			instagram: "https://www.instagram.com/candidate_tanner_woody/?hl=en",
 			isNavCollapsed: true,
 			schemaSameAs: [
 				"https://github.com/twoody",
