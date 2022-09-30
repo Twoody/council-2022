@@ -126,6 +126,7 @@ export default {
 				"https://www.linkedin.com/in/tannerwoody/",
 				"https://www.strava.com/athletes/9502204",
 				"https://www.facebook.com/tanner.woody.9/",
+				"https://www.instagram.com/candidate_tanner_woody",
 			],
 		}
 	},
