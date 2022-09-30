@@ -49,47 +49,45 @@
 				</transition>
 			</router-view>
 		</AppSection>
-		<AppSection centered is-showing >
-			<div class="bottom-banner">
-				<div class="flex-box cheat">
-					<div class="flex-item">
-						<MyButton
-							class="footer-button"
-							pill
+		<div class="bottom-banner">
+			<div class="flex-box cheat">
+				<div class="flex-item">
+					<MyButton
+						class="footer-button"
+						pill
+					>
+						<a
+							class="linked"
+							:href="facebook"
+							target="_blank"
 						>
-							<a
-								class="linked"
-								:href="facebook"
-								target="_blank"
-							>
-								<span>Facebook</span>
-							</a>
-						</MyButton>
-						<MyButton
-							class="footer-button"
-							pill
+							<span>Facebook</span>
+						</a>
+					</MyButton>
+					<MyButton
+						class="footer-button"
+						pill
+					>
+						<a
+							class="linked"
+							:href="instagram"
+							target="_blank"
 						>
-							<a
-								class="linked"
-								:href="instagram"
-								target="_blank"
-							>
-								<span>Instagram</span>
-							</a>
-						</MyButton>
-					</div>
-					<div class="flex-item">
-						<div class="flex-box cheat">
-							<div class="flex-item">
-								Copyright
-								<font-awesome-icon icon="fa fa-copyright" />
-								2022 Tanner Woody All Rights Reserved
-							</div>
+							<span>Instagram</span>
+						</a>
+					</MyButton>
+				</div>
+				<div class="flex-item">
+					<div class="flex-box cheat">
+						<div class="flex-item">
+							Copyright
+							<font-awesome-icon icon="fa fa-copyright" />
+							2022 Tanner Woody All Rights Reserved
 						</div>
 					</div>
 				</div>
 			</div>
-		</AppSection>
+		</div>
 	</div>
 </template>
 
