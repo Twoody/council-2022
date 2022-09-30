@@ -76,6 +76,18 @@
 							<span>Instagram</span>
 						</a>
 					</MyButton>
+					<MyButton
+						class="footer-button"
+						pill
+					>
+						<a
+							class="linked"
+							:href="github"
+							target="_blank"
+						>
+							<span>Edit this Page</span>
+						</a>
+					</MyButton>
 				</div>
 				<div class="flex-item">
 					<div class="flex-box cheat">
@@ -117,6 +129,7 @@ export default {
 	{
 		return {
 			facebook: "https://www.facebook.com/tanner.woody.9/",
+			github: "https://github.com/Twoody/council-2022",
 			instagram: "https://www.instagram.com/candidate_tanner_woody/?hl=en",
 			isNavCollapsed: true,
 			schemaSameAs: [
