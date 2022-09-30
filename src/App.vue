@@ -47,11 +47,46 @@
 				</transition>
 			</router-view>
 		</AppSection>
-		<AppSection
-			:isShowing="$store.state.layout.isShowingFooter"
-			@click="$store.commit('setIsShowingFooter', false)"
-		>
-			<div id="bottom-banner" />
+		<AppSection centered is-showing >
+			<div class="bottom-banner">
+				<div class='flex-box cheat'>
+					<div class='flex-item'>
+							<MyButton
+								class="footer-button"
+								pill
+							>
+								<a
+									class="linked"
+									:href="instagram"
+									target="_blank"
+								>
+									<span>Facebook</span>
+								</a>
+							</MyButton>
+							<MyButton
+								class="footer-button"
+								pill
+							>
+								<a
+									class="linked"
+									:href="instagram"
+									target="_blank"
+								>
+									<span>Instagram</span>
+								</a>
+							</MyButton>
+					</div>
+					<div class='flex-item'>
+						<div class='flex-box cheat'>
+							<div class='flex-item'>
+								Copyright
+								<font-awesome-icon icon="fa fa-copyright" />
+								2022 Tanner Woody All Rights Reserved
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</AppSection>
 	</div>
 </template>
@@ -64,6 +99,7 @@ import {SchemaOrgOrganization,
 	SchemaOrgWebSite} from "@vueuse/schema-org/dist/runtime-simple/components/nodes.mjs"
 
 import AppSection from "components/common/AppSection"
+import MyButton from "components/buttons/MyButton"
 import NavBar from "components/nav/NavBar"
 
 export default {
@@ -71,6 +107,7 @@ export default {
 	components:
 	{
 		AppSection,
+		MyButton,
 		NavBar,
 		SchemaOrgOrganization,
 		SchemaOrgWebPage,
@@ -79,6 +116,8 @@ export default {
 	data: function()
 	{
 		return {
+			facebooke: 'https://www.facebook.com/tanner.woody.9/',
+			instagram: 'https://www.instagram.com/candidate_tanner_woody/?hl=en',
 			isNavCollapsed: true,
 			schemaSameAs: [
 				"https://github.com/twoody",
@@ -214,11 +253,21 @@ html, body {
 	width: 100%;
 
 }
-#bottom-banner {
+.bottom-banner {
+	align-items: center;
 	background-color: @color-third-background;
 	bottom: 0;
+	display: flex;
 	height: 50px;
+	justify-content: center;
 	width: 100%;
+
+	.flex-box {
+		&.cheat {
+			font-size: 12px;
+			max-width: 100%;
+		}
+	}
 }
 #content-wrapper {
 	background-color: @color-primary-background;
@@ -261,6 +310,11 @@ html, body {
 .fade-enter,
 .fade-leave-active {
   opacity: 0
+}
+.footer-button {
+	span {
+		color: @myblack;
+	}
 }
 
 a:focus-visible {
