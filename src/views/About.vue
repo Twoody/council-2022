@@ -8,8 +8,24 @@
 			<div class="flex-box">
 				<ul>
 					<li>
-						City Councilor Rory Bialostosky
+						<a
+							class="linked"
+							href="https://westlinnoregon.gov/citycouncil/council-president-rory-bialostosky"
+							target="_blank"
+						>
+							City Councilor Rory Bialostosky
+						</a>
 					</li>
+					<li>
+						<a
+							class="linked"
+							href="https://westlinnoregon.gov/citycouncil/council-president-rory-bialostosky"
+							target="_blank"
+						>
+							Vote Before Tolls + No Tolls Army + MLD Foundation - Founder + President - Dean Suhr
+						</a>
+					</li>
+
 				</ul>
 			</div>
 		</div>
@@ -91,6 +107,10 @@ export default {
 	flex-direction: column;
 	width: 100%;
 
+	.linked {
+		color: @myblack;
+		font-weight: 900;
+	}
 	.content-section {
 		align-items: center;
 		align-content: center;
