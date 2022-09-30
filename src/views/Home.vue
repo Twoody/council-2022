@@ -15,7 +15,7 @@
 					in mind.
 					These focuses currently span:
 					<ul>
-						<li>NO Tolling</li>
+						<li>NO Tolling (and endorsed by Vote Before Tolls - Dean Suhr)</li>
 						<li>Proper 205 Restructure</li>
 						<li>Highway 43 Roundabouts</li>
 						<li>Highway 43 Transfer of Ownership</li>
