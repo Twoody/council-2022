@@ -10,6 +10,7 @@
 		<SchemaOrgWebPage />
 
 		<!-- TODO: Tie into vue comps -->
+		<!--
 		<AppSection
 			:isShowing="$store.state.layout.isShowingBanner"
 			@click="$store.commit('setIsShowingBanner', false)"
@@ -18,6 +19,7 @@
 				{{ $store.state.layout.bannerMessage }}
 			</div>
 		</AppSection>
+		-->
 
 		<!-- Handle appSection click for navbar on chevron and ations instead.. -->
 		<AppSection
@@ -57,7 +59,7 @@
 						>
 							<a
 								class="linked"
-								:href="instagram"
+								:href="facebook"
 								target="_blank"
 							>
 								<span>Facebook</span>
@@ -116,7 +118,7 @@ export default {
 	data: function()
 	{
 		return {
-			facebooke: "https://www.facebook.com/tanner.woody.9/",
+			facebook: "https://www.facebook.com/tanner.woody.9/",
 			instagram: "https://www.instagram.com/candidate_tanner_woody/?hl=en",
 			isNavCollapsed: true,
 			schemaSameAs: [
