@@ -19,7 +19,7 @@
 					<li>
 						<a
 							class="linked"
-							href="https://westlinnoregon.gov/citycouncil/council-president-rory-bialostosky"
+							href="https://votebeforetolls.org/"
 							target="_blank"
 						>
 							Vote Before Tolls + No Tolls Army + MLD Foundation - Founder + President - Dean Suhr
