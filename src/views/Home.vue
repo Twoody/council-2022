@@ -20,13 +20,14 @@
 						<li>Highway 43 Roundabouts</li>
 						<li>Highway 43 Transfer of Ownership</li>
 						<li>The Waterfront Project</li>
+						<li>Driving Local Business Success</li>
 						<li>Fostering Community Ties</li>
 						<li>Riverside High School Organization</li>
-						<li>Driving Local Business Success</li>
+						<li>Advocating for Reproductive Rights</li>
 					</ul>
 				</p>
 				<p class="flex-item">
-					Tanner lives in the epicenter of these projects: The Bolton Neighborhood.
+					Tanner lives in the epicenter of the major financial projects: The Bolton Neighborhood.
 					The West Linn council needs Bolton representation for these events, and 
 					Tanner will provide that representation.
 				</p>

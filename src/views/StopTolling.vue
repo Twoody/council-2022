@@ -199,8 +199,7 @@
 export default {
 	name: "StopTolling",
 	components:
-	{
-	},
+	{},
 	created: function()
 	{
 	},

@@ -19,13 +19,21 @@
 					<li>
 						<a
 							class="linked"
+							href="https://thomasfrank.us/staff/"
+							target="_blank"
+						>
+							Former City Councilor Thomas A. Frank 
+						</a>
+					</li>
+					<li>
+						<a
+							class="linked"
 							href="https://votebeforetolls.org/"
 							target="_blank"
 						>
 							Vote Before Tolls + No Tolls Army + MLD Foundation - Founder + President - Dean Suhr
 						</a>
 					</li>
-
 				</ul>
 			</div>
 		</div>
