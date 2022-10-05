@@ -28,11 +28,46 @@
 					<li>
 						<a
 							class="linked"
+							:href="bolton"
+							target="_blank"
+						>
+							Bolton NA Vice President - Erich Kunrath
+						</a>
+					</li>
+					<li>
+						<a
+							class="linked"
+							:href="bolton"
+							target="_blank"
+						>
+							Bolton Treasurer - Walt Swan
+						</a>
+					</li>
+					<li>
+						<a
+							class="linked"
+							href="https://pamplinmedia.com/wlt/95-news/406759-304812-its-just-who-she-is"
+							target="_blank"
+						>
+							Friends of Maddax - Alma Coston
+						</a>
+					</li>
+					<li>
+						<a
+							class="linked"
 							href="https://votebeforetolls.org/"
 							target="_blank"
 						>
 							Vote Before Tolls + No Tolls Army + MLD Foundation - Founder + President - Dean Suhr
 						</a>
+					</li>
+					<li>
+						Concerned Citizens:
+						<ul>
+							<li>
+								Willie Hughey
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -101,6 +136,12 @@ export default {
 	name: "About",
 	components:
 	{},
+	data () 
+	{
+		return {
+			bolton: "https://westlinnoregon.gov/bolton/bolton",
+		}
+	},
 	created: function()
 	{
 	},
