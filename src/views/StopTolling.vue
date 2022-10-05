@@ -65,11 +65,11 @@
 					</em>
 					).
 					One toll exit is the same price.
-					That is roughly $4 a trip. 
+					That is roughly $4 a trip (e.g. going to Costco from West Linn is a trip). 
 					<br>
-					If I take 3 trips a week, that is $12 a day, $60 a week, and $240 
+					If I take 3 trips a day per week, that is $12 a day, $60 a week, and $240 
 					<br>
-					If I take 4 trips a week, that is $16 a day, $80 a week, and $320
+					If I take 4 trips a day per week, that is $16 a day, $80 a week, and $320
 					a month.
 				</p>
 				<div class="quote-box flex-item">
