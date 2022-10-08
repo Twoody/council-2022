@@ -8,7 +8,68 @@
 			<div class="flex-box">
 				<ul>
 					<li>
-						City Councilor Rory Bialostosky
+						<a
+							class="linked"
+							href="https://westlinnoregon.gov/citycouncil/council-president-rory-bialostosky"
+							target="_blank"
+						>
+							City Councilor Rory Bialostosky
+						</a>
+					</li>
+					<li>
+						<a
+							class="linked"
+							href="https://thomasfrank.us/staff/"
+							target="_blank"
+						>
+							Former City Councilor Thomas A. Frank 
+						</a>
+					</li>
+					<li>
+						<a
+							class="linked"
+							:href="bolton"
+							target="_blank"
+						>
+							Bolton NA Vice President - Erich Kunrath
+						</a>
+					</li>
+					<li>
+						<a
+							class="linked"
+							:href="bolton"
+							target="_blank"
+						>
+							Bolton Treasurer - Walt Swan
+						</a>
+					</li>
+					<li>
+						<a
+							class="linked"
+							href="https://pamplinmedia.com/wlt/95-news/406759-304812-its-just-who-she-is"
+							target="_blank"
+						>
+							Friends of Maddax - Alma Coston
+						</a>
+					</li>
+					<li>
+						<a
+							class="linked"
+							href="https://votebeforetolls.org/"
+							target="_blank"
+						>
+							Vote Before Tolls + No Tolls Army + MLD Foundation -
+							Founder + President -
+							Dean Suhr
+						</a>
+					</li>
+					<li>
+						Concerned Citizens:
+						<ul>
+							<li>
+								Willie Hughey
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -77,6 +138,12 @@ export default {
 	name: "About",
 	components:
 	{},
+	data () 
+	{
+		return {
+			bolton: "https://westlinnoregon.gov/bolton/bolton",
+		}
+	},
 	created: function()
 	{
 	},
@@ -91,6 +158,10 @@ export default {
 	flex-direction: column;
 	width: 100%;
 
+	.linked {
+		color: @myblack;
+		font-weight: 900;
+	}
 	.content-section {
 		align-items: center;
 		align-content: center;
@@ -103,6 +174,8 @@ export default {
 		width: 100%;
 
 		.flex-box {
+			margin-left: 17px;
+			margin-right: 17px;
 			text-align: left;
 		}
 		&:has(h1) {
@@ -127,7 +200,7 @@ export default {
 			}
 		}
 		&.hero-2 {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-dogs.jpg?alt=media&token=87bec6b3-3902-41c0-b69a-afcdabd17b25");
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-dogs.jpg?alt=media&token=42d00ac1-3511-4996-b9b3-43304b62149e");
 		}
 		&.hero-3 {
 			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-cat.jpg?alt=media&token=8f26f2ba-c511-4908-a204-e01012b24b28");

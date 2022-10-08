@@ -1,26 +1,38 @@
 import {resolve} from "path";
 import {defineConfig} from "vite";
+import { SchemaOrg } from '@vueuse/schema-org-vite'
+import { URL, fileURLToPath } from 'node:url'
+
 import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
 	plugins: [
 		vue(),
 		//antd introduces configuration on demand
+		SchemaOrg({
+			// Note: mocking is disable as it's expiremental
+			mock: false,
+			// use simple types
+			full: false,
+			// write type alias to tsconfig.json
+			dts: false,
+		 }),
 	],
 	resolve: {
 	//Path alias configuration
 		alias: {
-			"@": resolve(__dirname, ".", "src"),
-				components: resolve(__dirname, "src/components/"),
-				constants: resolve(__dirname, "src/constants/"),
-				find: /^~/,
-				replacement: '',
-				img: resolve(__dirname, "assets/img"),
-				services: resolve(__dirname, "src/services/"),
-				src: resolve(__dirname, "src"),
-				store: resolve(__dirname, "src/store/"),
-				styles: resolve(__dirname, "assets/styles/"),
-				svgs: resolve(__dirname, "src/assets/svgs/"),
+			//"@": resolve(__dirname, ".", "src"),
+			'@': fileURLToPath(new URL('./src', import.meta.url)),
+			components: resolve(__dirname, "src/components/"),
+			constants: resolve(__dirname, "src/constants/"),
+			find: /^~/,
+			replacement: '',
+			img: resolve(__dirname, "assets/img"),
+			services: resolve(__dirname, "src/services/"),
+			src: resolve(__dirname, "src"),
+			store: resolve(__dirname, "src/store/"),
+			styles: resolve(__dirname, "assets/styles/"),
+			svgs: resolve(__dirname, "src/assets/svgs/"),
 
 		},
 		mainFields: ["module"],
