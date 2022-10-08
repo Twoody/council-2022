@@ -27,7 +27,9 @@
 					</ul>
 				</p>
 				<p class="flex-item">
-					Tanner lives in the epicenter of the major financial projects: The Bolton Neighborhood.
+					Tanner lives in the epicenter of the major financial projects:
+					The Bolton Neighborhood.
+
 					The West Linn council needs Bolton representation for these events, and 
 					Tanner will provide that representation.
 				</p>

@@ -58,7 +58,9 @@
 							href="https://votebeforetolls.org/"
 							target="_blank"
 						>
-							Vote Before Tolls + No Tolls Army + MLD Foundation - Founder + President - Dean Suhr
+							Vote Before Tolls + No Tolls Army + MLD Foundation -
+							Founder + President -
+							Dean Suhr
 						</a>
 					</li>
 					<li>

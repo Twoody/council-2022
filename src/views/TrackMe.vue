@@ -39,7 +39,7 @@
 
 <script>
 export default {
-	name: "Events",
+	name: "TrackMe",
 	components:
 	{},
 	created: function()
