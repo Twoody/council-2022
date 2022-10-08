@@ -15,23 +15,26 @@
 					in mind.
 					These focuses currently span:
 					<ul>
-						<li>NO Tolling</li>
+						<li>NO Tolling (and endorsed by Vote Before Tolls - Dean Suhr)</li>
 						<li>Proper 205 Restructure</li>
 						<li>Highway 43 Roundabouts</li>
 						<li>Highway 43 Transfer of Ownership</li>
 						<li>The Waterfront Project</li>
+						<li>Driving Local Business Success</li>
 						<li>Fostering Community Ties</li>
 						<li>Riverside High School Organization</li>
-						<li>Driving Local Business Success</li>
+						<li>Advocating for Reproductive Rights</li>
 					</ul>
 				</p>
 				<p class="flex-item">
-					Tanner lives in the epicenter of these projects: The Bolton Neighborhood.
+					Tanner lives in the epicenter of the major financial projects:
+					The Bolton Neighborhood.
+
 					The West Linn council needs Bolton representation for these events, and 
 					Tanner will provide that representation.
 				</p>
 				<p class="flex-item">
-					Currently, Tanner is on the Bolton Neighborhood Association Board and on
+					Currently, Tanner is an active member of the Bolton Neighborhood Association and on
 					the Tax Increment Financing (TIF) Advisory Committee. We need to extend this
 					representation to the City Council itself, to make ODOT work for us.
 				</p>
@@ -142,6 +145,8 @@ export default {
 		width: 100%;
 
 		.flex-box {
+			margin-left: 17px;
+			margin-right: 17px;
 			text-align: left;
 		}
 	}
