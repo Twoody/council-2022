@@ -10,7 +10,7 @@
 					<li>
 						<a
 							class="linked"
-							href="https://westlinnoregon.gov/citycouncil/council-president-rory-bialostosky"
+							:href="URLS.WEST_LINN.RORY"
 							target="_blank"
 						>
 							City Councilor Rory Bialostosky
@@ -19,7 +19,7 @@
 					<li>
 						<a
 							class="linked"
-							href="https://thomasfrank.us/staff/"
+							:href="URLS.ENDORSERS.THOMAS_FRANK"
 							target="_blank"
 						>
 							Former City Councilor Thomas A. Frank 
@@ -28,7 +28,7 @@
 					<li>
 						<a
 							class="linked"
-							:href="bolton"
+							:href="URLS.WEST_LINN.BOLTON"
 							target="_blank"
 						>
 							Bolton NA Vice President - Erich Kunrath
@@ -37,7 +37,7 @@
 					<li>
 						<a
 							class="linked"
-							:href="bolton"
+							:href="URLS.WEST_LINN.BOLTON"
 							target="_blank"
 						>
 							Bolton Treasurer - Walt Swan
@@ -46,16 +46,16 @@
 					<li>
 						<a
 							class="linked"
-							href="https://pamplinmedia.com/wlt/95-news/406759-304812-its-just-who-she-is"
+							:href="URLS.ENDORSERS.ALMA_COSTON"
 							target="_blank"
 						>
-							Friends of Maddax - Alma Coston
+							Friends of Maddax Member - Alma Coston
 						</a>
 					</li>
 					<li>
 						<a
 							class="linked"
-							href="https://votebeforetolls.org/"
+							:href="URLS.ENDORSERS.DEAN_SUHR"
 							target="_blank"
 						>
 							Vote Before Tolls + No Tolls Army + MLD Foundation -
@@ -68,6 +68,9 @@
 						<ul>
 							<li>
 								Willie Hughey
+							</li>
+							<li>
+								Bill Gilbert
 							</li>
 						</ul>
 					</li>
@@ -134,6 +137,8 @@
 </template>
 
 <script>
+import {URLS} from "constants/urls.js"
+
 export default {
 	name: "About",
 	components:
@@ -141,7 +146,7 @@ export default {
 	data () 
 	{
 		return {
-			bolton: "https://westlinnoregon.gov/bolton/bolton",
+			URLS: URLS,
 		}
 	},
 	created: function()

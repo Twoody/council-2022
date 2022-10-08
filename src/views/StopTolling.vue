@@ -57,7 +57,7 @@
 					One toll entry is $2.20 (
 					<em>
 						<a
-							href="https://www.oregon.gov/odot/tolling/Documents/2022_August-Update.pdf"
+							:href="URLS.ODOT.TOLLING.UPDATES['202208']"
 							target="_blank"
 						>
 							drafted, subject to change
@@ -99,7 +99,7 @@
 							the current goals and priorities of "advancing equity, climate
 							change, congestion relief, and safety goals."
 							The effects of tolling West Linn do not align with your first
-							priority, equity. The effects of tolling  do not align with
+							priority, equity. The effects of tolling do not align with
 							your third goal, congestion relief, as we will see increased
 							congestion on our side roads.
 						</p>
@@ -139,7 +139,7 @@
 					<ul>
 						<li>
 							<a
-								href="https://www.oregon.gov/odot/UMO/Documents/urban-mobility-strategy-2022-02-08.pdf?fbclid=IwAR1qcojpI0J087Ot5AVuM1JKn-syItwXhqVgbbcws73LQu5FB5Rxw3m5-BM"
+								:href="URLS.ODOT.TOLLING.MOBILITY_STRATEGY_2022_02"
 								target="_blank"
 							>
 								ODOT goals (e.g. equity)
@@ -148,7 +148,7 @@
 
 						<li>
 							<a
-								href="https://www.oregon.gov/odot/tolling/Pages/Advisory-Committee.aspx"
+								:href="URLS.ODOT.TOLLING.EQUITY_COMMITTEE"
 								target="_blank"
 							>
 								Equity and Mobility Committee members
@@ -157,7 +157,7 @@
 
 						<li>
 							<a
-								href="https://www.oregon.gov/odot/tolling/Pages/Regional-Toll-Advisory-Committee.aspx?fbclid=IwAR0hh_iqwB7Qcky8H_SCjn36dC-LarYgHEhpMooYZ4ZXrMctST5SeANp3HI"
+								:href="URLS.ODOT.TOLLING.ABOUT"
 								target="_blank"
 							>
 								Tolling Meetings
@@ -165,7 +165,7 @@
 						</li>
 						<li>
 							<a
-								href="https://www.oregon.gov/odot/tolling/Documents/2022_August-Update.pdf"
+								:href="URLS.ODOT.TOLLING.UPDATES['202208']"
 								target="_blank"
 							>
 								Current Planned Toll Rates
@@ -173,7 +173,7 @@
 						</li>
 						<li>
 							<a
-								href="https://www.oregon.gov/odot/tolling/Pages/Latest-News.aspx?fbclid=IwAR3z8lzQq_r35_AIDfZImz9M4prglh-ATMYEmJm24MxpzTat1-b5gnzRjhs"
+								:href="URLS.ODOT.TOLLING.LATEST_NEWS"
 								target="_blank"
 							>
 								Latest from ODOT Tolling Committee
@@ -181,7 +181,7 @@
 						</li>
 						<li>
 							<a
-								href="https://www.oregon.gov/odot/Planning/Documents/OHP%20Policy%20Amendment%20Draft%20for%20Public%20Review.pdf?fbclid=IwAR3aElVJdG3xtJv0JApsGNI7mD6DhueygzKsESgHxN8pMgBu8cE8575rspc"
+								:href="URLS.ODOT.TOLLING.DRAFTS['202208']"
 								target="_blank"
 							>
 								Current Tolling Draft
@@ -195,11 +195,18 @@
 </template>
 
 <script>
+import {URLS} from "constants/urls.js"
 
 export default {
 	name: "StopTolling",
 	components:
 	{},
+	data () 
+	{
+		return {
+			URLS: URLS,
+		}
+	},
 	created: function()
 	{
 	},

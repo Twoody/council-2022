@@ -6,6 +6,7 @@ import { createHead } from "@vueuse/head"
 import router from "./router"
 import store from "./store/store.js"
 import { installSchemaOrg } from "@vueuse/schema-org-vite/vite"
+import { URLS } from "constants/urls.js"
 
 // Fontawesome
 import { faBan } from "@fortawesome/free-solid-svg-icons"
@@ -46,7 +47,7 @@ installSchemaOrg({
 	app,
 	router, 
 }, {
-	canonicalHost: "https://woodyforcouncil.com",
+	canonicalHost: URLS.CANONICAL_HOST,
 })
 
 // Mount the app

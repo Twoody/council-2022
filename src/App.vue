@@ -113,6 +113,7 @@ import {SchemaOrgOrganization,
 import AppSection from "components/common/AppSection"
 import MyButton from "components/buttons/MyButton"
 import NavBar from "components/nav/NavBar"
+import {URLS} from "constants/urls.js"
 
 export default {
 	name: "App",
@@ -128,16 +129,16 @@ export default {
 	data: function()
 	{
 		return {
-			facebook: "https://www.facebook.com/tanner.woody.9/",
-			github: "https://github.com/Twoody/council-2022",
-			instagram: "https://www.instagram.com/candidate_tanner_woody/?hl=en",
+			facebook: URLS.SOCIALS.FACEBOOK,
+			github: URLS.__REPO,
+			instagram: URLS.SOCIALS.INSTAGRAM,
 			isNavCollapsed: true,
 			schemaSameAs: [
-				"https://github.com/twoody",
-				"https://www.linkedin.com/in/tannerwoody/",
-				"https://www.strava.com/athletes/9502204",
-				"https://www.facebook.com/tanner.woody.9/",
-				"https://www.instagram.com/candidate_tanner_woody",
+				URLS.SOCIALS.GITHUB,
+				URLS.SOCIALS.LINKEDIN,
+				URLS.SOCIALS.STRAVA,
+				URLS.SOCIALS.FACEBOOK,
+				URLS.SOCIALS.INSTAGRAM,
 			],
 		}
 	},
