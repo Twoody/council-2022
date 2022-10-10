@@ -1,111 +1,123 @@
 <template>
 	<div class="home-wrapper">
-		<div class="hero flex-box">
-			<h2 class="flex-item">
-				Hi, I am Tanner Woody.
-			</h2>
-		</div>
-		<div class="accordion-sections even-section">
-			<h2>
-				Platform focuses
-			</h2>
-			<div class="flex-box">
-				<p class="flex-item">
-					Tanner will focus on the future of West Linn with both PRESENT and 40 year goals
-					in mind.
-					These focuses currently span:
-					<ul>
-						<li>NO Tolling (and endorsed by Vote Before Tolls - Dean Suhr)</li>
-						<li>Proper 205 Restructure</li>
-						<li>Highway 43 Roundabouts</li>
-						<li>Highway 43 Transfer of Ownership</li>
-						<li>The Waterfront Project</li>
-						<li>Driving Local Business Success</li>
-						<li>Fostering Community Ties</li>
-						<li>Riverside High School Organization</li>
-						<li>Advocating for Reproductive Rights</li>
-					</ul>
-				</p>
-				<p class="flex-item">
-					Tanner lives in the epicenter of the major financial projects:
-					The Bolton Neighborhood.
+		<section id="flyer">
+			<div class="hero flex-box">
+				<h2 class="flex-item">
+					Hi, I am Tanner Woody.
+				</h2>
+			</div>
+		</section>
+		<section id="platform">
+			<div class="accordion-sections even-section">
+				<h2>
+					Platform focuses
+				</h2>
+				<div class="flex-box">
+					<p class="flex-item">
+						Tanner will focus on the future of West Linn with both PRESENT and 40 year goals
+						in mind.
+						These focuses currently span:
+						<ul>
+							<li>NO Tolling (and endorsed by Vote Before Tolls - Dean Suhr)</li>
+							<li>Proper 205 Restructure</li>
+							<li>Highway 43 Roundabouts</li>
+							<li>Highway 43 Transfer of Ownership</li>
+							<li>The Waterfront Project</li>
+							<li>Driving Local Business Success</li>
+							<li>Fostering Community Ties</li>
+							<li>Riverside High School Organization</li>
+							<li>Advocating for Reproductive Rights</li>
+						</ul>
+					</p>
+					<p class="flex-item">
+						Tanner lives in the epicenter of the major financial projects:
+						The Bolton Neighborhood.
 
-					The West Linn council needs Bolton representation for these events, and 
-					Tanner will provide that representation.
-				</p>
-				<p class="flex-item">
-					Currently, Tanner is an active member of the Bolton Neighborhood Association and on
-					the Tax Increment Financing (TIF) Advisory Committee. We need to extend this
-					representation to the City Council itself, to make ODOT work for us.
-				</p>
+						The West Linn council needs Bolton representation for these events, and 
+						Tanner will provide that representation.
+					</p>
+					<p class="flex-item">
+						Currently, Tanner is an active member of the Bolton Neighborhood Association and on
+						the Tax Increment Financing (TIF) Advisory Committee. We need to extend this
+						representation to the City Council itself, to make ODOT work for us.
+					</p>
+				</div>
 			</div>
-		</div>
-		<div class="accordion-sections odd-section">
-			<h2>
-				Tolling
-			</h2>
-			<div class="flex-box">
-				<p class="flex-item">
-					Tanner believes that tolling needs to be done with equal payments in mind,
-					and as many of us frequent Oregon City for practical services,
-					<b>ODOTs tolling does not affect us equally.</b>
-				</p>
+		</section>
+		<section id="tolling">
+			<div class="accordion-sections odd-section">
+				<h2>
+					Tolling
+				</h2>
+				<div class="flex-box">
+					<p class="flex-item">
+						Tanner believes that tolling needs to be done with equal payments in mind,
+						and as many of us frequent Oregon City for practical services,
+						<b>ODOTs tolling does not affect us equally.</b>
+					</p>
+				</div>
 			</div>
-		</div>
-		<div class="accordion-sections even-section">
-			<h2>
-				Economy
-			</h2>
-			<div class="flex-box">
-				<p class="flex-item">
-					Right now, West Linn is undergoing "Envisionment Planning" for the
-					Waterfront Project. Tanner will represent Bolton and West Linn by:
-					<ul>
-						<li>Strengthening the waterfront plan, for Bolton residents</li>
-						<li>Building better business and providing more services</li>
-						<li>Advocating for existing businesses</li>
-					</ul>
-				</p>
-				<p class="flex-item">
-					<b>Tanner will do this with Maddax Woods to McLean House preservation in mind.</b>
-				</p>
+		</section>
+		<section id="economy">
+			<div class="accordion-sections even-section">
+				<h2>
+					Economy
+				</h2>
+				<div class="flex-box">
+					<p class="flex-item">
+						Right now, West Linn is undergoing "Envisionment Planning" for the
+						Waterfront Project. Tanner will represent Bolton and West Linn by:
+						<ul>
+							<li>Strengthening the waterfront plan, for Bolton residents</li>
+							<li>Building better business and providing more services</li>
+							<li>Advocating for existing businesses</li>
+						</ul>
+					</p>
+					<p class="flex-item">
+						<b>Tanner will do this with Maddax Woods to McLean House preservation in mind.</b>
+					</p>
+				</div>
 			</div>
-		</div>
+		</section>
 		<div class="hero hero-2 odd-section flex-box"/>
-		<div class="accordion-sections even-section">
-			<h2>
-				Equality
-			</h2>
-			<div class="flex-box">
-				<p class="flex-item">
-					Tanner believes that tolling needs to be done with equal payments in mind,
-					and as many of us frequent Oregon City for practical services,
-					<b>ODOTs tolling does not affect us equally.</b>
-				</p>
-				<p class="flex-item">
-					Anyone can belong anywhere, and residents deserve to be safe in our community.
-					Tanner will stand for all residents and their rights to live their lives freely of
-					bigotry and prejudice.
-				</p>
+		<section id="equality">
+			<div class="accordion-sections even-section">
+				<h2>
+					Equality
+				</h2>
+				<div class="flex-box">
+					<p class="flex-item">
+						Tanner believes that tolling needs to be done with equal payments in mind,
+						and as many of us frequent Oregon City for practical services,
+						<b>ODOTs tolling does not affect us equally.</b>
+					</p>
+					<p class="flex-item">
+						Anyone can belong anywhere, and residents deserve to be safe in our community.
+						Tanner will stand for all residents and their rights to live their lives freely of
+						bigotry and prejudice.
+					</p>
+				</div>
 			</div>
-		</div>
-		<div class="accordion-sections odd-section hero hero-3">
-			<h2>
-				Environment
-			</h2>
-			<div class="flex-box">
-				<p class="flex-item">
-					West Linn's beauty is captured in its rivers, parks, and trails.
-					The West Linn Parks and Rec. Department have done (and continue to do)
-					a great job.
-					SOLVE and community involvement display the importance of these assets. 
-				</p>
-				<p class="flex-item">
-					Tanner will work with our existing council, ODOT, P&amp;R, and community to maintain
-					and preserve our parks and recreational facilities.
-				</p>
+		</section>
+		<section id="environment">
+			<div class="accordion-sections odd-section hero hero-3">
+				<h2>
+					Environment
+				</h2>
+				<div class="flex-box">
+					<p class="flex-item">
+						West Linn's beauty is captured in its rivers, parks, and trails.
+						The West Linn Parks and Rec. Department have done (and continue to do)
+						a great job.
+						SOLVE and community involvement display the importance of these assets. 
+					</p>
+					<p class="flex-item">
+						Tanner will work with our existing council, ODOT, P&amp;R, and community to maintain
+						and preserve our parks and recreational facilities.
+					</p>
+				</div>
 			</div>
-		</div>
+		</section>
 	</div>
 </template>
 

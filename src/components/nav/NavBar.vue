@@ -68,8 +68,16 @@ export default {
 		flex-grow: 1;
 
 		.nav-item {
+			background: @color-pastel-blue;
+			border-radius: 5px;
+			color: @myblack;
+			padding: 5px;
 			margin: 5px;
 			text-decoration: none;
+
+			&.router-link-exact-active {
+				background-color: white;
+			}
 		}
 	}
 	.flex-col {
@@ -87,7 +95,7 @@ a {
 }
 a.router-link-exact-active {
 	color: @color-pastel-green;
-	font-size: 19px;
-	text-decoration: underline !important;
+	font-size: 21px;
+	transition: all .25s;
 }
 </style>

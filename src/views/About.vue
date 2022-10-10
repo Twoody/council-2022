@@ -3,145 +3,157 @@
 		<div class="content-section even-section">
 			<h1>About Tanner Woody</h1>
 		</div>
-		<div class="content-section odd-section">
-			<h2>Endorsements</h2>
-			<div class="flex-box">
-				<ul>
-					<li>
-						<a
-							class="linked"
-							:href="URLS.WEST_LINN.RORY"
-							target="_blank"
-						>
-							City Councilor - Rory Bialostosky
-						</a>
-					</li>
-					<li>
-						<a
-							class="linked"
-							:href="URLS.ENDORSERS.THOMAS_FRANK"
-							target="_blank"
-						>
-							Former City Councilor - Thomas A. Frank 
-						</a>
-					</li>
-					<li>
-						<a
-							class="linked"
-							:href="URLS.WEST_LINN.BOLTON"
-							target="_blank"
-						>
-							Bolton NA Vice President - Erich Kunrath
-						</a>
-					</li>
-					<li>
-						<a
-							class="linked"
-							:href="URLS.WEST_LINN.BOLTON"
-							target="_blank"
-						>
-							Bolton Treasurer - Walt Swan
-						</a>
-					</li>
-					<li>
-						<a
-							class="linked"
-							:href="URLS.ENDORSERS.ALMA_COSTON"
-							target="_blank"
-						>
-							Friends of Maddax Member - Alma Coston
-						</a>
-					</li>
-					<li>
-						<a
-							class="linked"
-							:href="URLS.ENDORSERS.SAFE_AND_HOUND"
-							target="_blank"
-						>
-							Business Owner - Crystal Jayne
-						</a>
-					</li>
-					<li>
-						<a
-							class="linked"
-							:href="URLS.ENDORSERS.DEAN_SUHR"
-							target="_blank"
-						>
-							Vote Before Tolls + No Tolls Army + MLD Foundation -
-							Founder + President -
-							Dean Suhr
-						</a>
-					</li>
-					<li>
-						Concerned Citizens:
-						<ul>
+		<section id="endorsements">
+			<div class="content-section odd-section">
+				<h2>Endorsements</h2>
+				<div class="flex-box">
+					<ul>
+						<li>
+							<a
+								class="linked"
+								:href="URLS.WEST_LINN.RORY"
+								target="_blank"
+							>
+								City Councilor - Rory Bialostosky
+							</a>
+						</li>
+						<li>
+							<a
+								class="linked"
+								:href="URLS.ENDORSERS.THOMAS_FRANK"
+								target="_blank"
+							>
+								Former City Councilor - Thomas A. Frank 
+							</a>
+						</li>
+						<li>
+							<a
+								class="linked"
+								:href="URLS.WEST_LINN.BOLTON"
+								target="_blank"
+							>
+								Bolton NA Vice President - Erich Kunrath
+							</a>
+						</li>
+						<li>
+							<a
+								class="linked"
+								:href="URLS.WEST_LINN.BOLTON"
+								target="_blank"
+							>
+								Bolton Treasurer - Walt Swan
+							</a>
+						</li>
+						<li>
+							<a
+								class="linked"
+								:href="URLS.ENDORSERS.ALMA_COSTON"
+								target="_blank"
+							>
+								Friends of Maddax Member - Alma Coston
+							</a>
+						</li>
+						<li>
+							<a
+								class="linked"
+								:href="URLS.ENDORSERS.SAFE_AND_HOUND"
+								target="_blank"
+							>
+								Business Owner - Crystal Jayne
+							</a>
+						</li>
+						<li>
+							<a
+								class="linked"
+								:href="URLS.ENDORSERS.DEAN_SUHR"
+								target="_blank"
+							>
+								Vote Before Tolls + No Tolls Army + MLD Foundation -
+								Founder + President -
+								Dean Suhr
+							</a>
+						</li>
+						<li>
+							Concerned Citizens:
+							<ul>
+								<li>
+									Willie Hughey
+								</li>
+								<li>
+									Bill Gilbert
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="credentials">
+			<div class="content-section even-section">
+				<h2>Credentials</h2>
+				<div class="flex-box">
+					<ul>
+						<li>West Linn Tax Increment Finance (TIF) Committee Advisor</li>
+						<li>Bolton Neighborhood Association (BNA) Member</li>
+						<li>SOLVE Member</li>
+						<li>BA Computer Science</li>
+						<li>BS Mathematics</li>
+						<li>University of Iowa Residential Halls President</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="engineer">
+			<div class="content-section odd-section">
+				<h2>The Site</h2>
+				<div class="flex-box">
+					<p class="flex-item">
+						This site is put together by, Tanner Woody, himself.
+						This site would not be possible without the support of Tanner's spouse,
+						Betsy Spencer.
+					</p>
+					<p class="flex-item">
+						Tanner wrote this site using Vue, firebase, jest, vuex, and other technologies.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="family">
+			<div class="content-section even-section hero">
+				<h2>Family</h2>
+				<div class="flex-box">
+					<p class="flex-item">
+						Betsy and Tanner met in Iowa, married in New York,
+						and live in West Linn, in the Bolton neighborhood.
+						In Bolton, they are growing their bio and foster family.
+					</p>
+					<p class="flex-item">
+						They have three pets:
+						<ol>
 							<li>
-								Willie Hughey
+								Bro'Dee
 							</li>
 							<li>
-								Bill Gilbert
+								Ruby
 							</li>
-						</ul>
-					</li>
-				</ul>
+							<li>
+								Kouldbie
+							</li>
+						</ol>
+					</p>
+				</div>
 			</div>
-		</div>
-		<div class="content-section even-section">
-			<h2>Credentials</h2>
-			<div class="flex-box">
-				<ul>
-					<li>West Linn Tax Increment Finance (TIF) Committee Advisor</li>
-					<li>Bolton Neighborhood Association (BNA) Member</li>
-					<li>SOLVE Member</li>
-					<li>BA Computer Science</li>
-					<li>BS Mathematics</li>
-					<li>University of Iowa Residential Halls President</li>
-				</ul>
+		</section>
+		<section id="dogs">
+			<div class="content-section odd-section hero hero-2">
+				<h2>Dogs</h2>
 			</div>
-		</div>
-		<div class="content-section odd-section">
-			<h2>The Site</h2>
-			<div class="flex-box">
-				<p class="flex-item">
-					This site is put together by, Tanner Woody, himself.
-					This site would not be possible without the support of Tanner's spouse,
-					Betsy Spencer.
-				</p>
-				<p class="flex-item">
-					Tanner wrote this site using Vue, firebase, jest, vuex, and other technologies.
-				</p>
+		</section>
+		<section id="cat">
+			<div class="content-section even-section hero hero-3">
+				<h2>Cat</h2>
 			</div>
-		</div>
-		<div class="content-section even-section hero">
-			<h2>Family</h2>
-			<div class="flex-box">
-				<p class="flex-item">
-					Betsy and Tanner met in Iowa, married in New York,
-					and live in West Linn, in the Bolton neighborhood.
-					In Bolton, they are growing their bio and foster family.
-				</p>
-				<p class="flex-item">
-					They have three pets:
-					<ol>
-						<li>
-							Bro'Dee
-						</li>
-						<li>
-							Ruby
-						</li>
-						<li>
-							Kouldbie
-						</li>
-					</ol>
-				</p>
-			</div>
-		</div>
-		<div class="content-section odd-section hero hero-2">
-			<h2>Dogs</h2>
-		</div>
-		<div class="content-section even-section hero hero-3">
-			<h2>Cat</h2>
-		</div>
+		</section>
 	</div>
 </template>
 
