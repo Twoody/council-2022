@@ -13,7 +13,7 @@
 							:href="URLS.WEST_LINN.RORY"
 							target="_blank"
 						>
-							City Councilor Rory Bialostosky
+							City Councilor - Rory Bialostosky
 						</a>
 					</li>
 					<li>
@@ -22,7 +22,7 @@
 							:href="URLS.ENDORSERS.THOMAS_FRANK"
 							target="_blank"
 						>
-							Former City Councilor Thomas A. Frank 
+							Former City Councilor - Thomas A. Frank 
 						</a>
 					</li>
 					<li>
@@ -50,6 +50,15 @@
 							target="_blank"
 						>
 							Friends of Maddax Member - Alma Coston
+						</a>
+					</li>
+					<li>
+						<a
+							class="linked"
+							:href="URLS.ENDORSERS.SAFE_AND_HOUND"
+							target="_blank"
+						>
+							Business Owner - Crystal Jayne
 						</a>
 					</li>
 					<li>

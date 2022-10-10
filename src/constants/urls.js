@@ -4,6 +4,7 @@ const URLS = {
 	ENDORSERS: {
 		ALMA_COSTON: "https://pamplinmedia.com/wlt/95-news/406759-304812-its-just-who-she-is",
 		DEAN_SUHR: "https://votebeforetolls.org/",
+		SAFE_AND_HOUND: "https://www.safeandhound.net/about",
 		THOMAS_FRANK: "https://thomasfrank.us/staff/",
 	},
 	EMAILS: {

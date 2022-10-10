@@ -58,7 +58,11 @@ export default
 		/** Is button currently doing a job */
 		inProgress: Boolean,
 
+		/** Is button unavailable for action(s) */
 		inactive: Boolean, 
+
+		/** Invert the colors in on a light background */
+		invertColors: Boolean,
 
 		/** Whether is a smaller pill button or not */
 		pill: Boolean,
@@ -95,6 +99,7 @@ export default
 			classes.active = !this.inactive
 			classes.disabled = this.disabled || this.inProgress
 			classes.inactive = this.inactive
+			classes["invert-colors"] = this.invertColors
 			classes.pill = this.pill
 			classes.progress = this.inProgress
 			classes.success = this.success
@@ -232,6 +237,10 @@ export default
 		transition: all .3s;
 		width: @diameter;
 		z-index: 100; 
+	}
+	&.invert-colors {
+		color: @color-pastel-blue;
+		background: @myblack;
 	}
 }
 

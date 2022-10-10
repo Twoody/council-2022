@@ -1,12 +1,14 @@
 <template>
-	<MyButton class="email-button">
+	<MyButton
+		class="email-button"
+		pill
+	>
 		<a
 			class="linked"
 			:href="mailto"
 			target="_blank"
 		>
-			<!-- TODO svg -->
-			<span>Email</span>
+			<slot/>
 		</a>
 	</MyButton>
 </template>
@@ -35,7 +37,6 @@ export default {
 	computed:
 	{
 		/**
-		 * @todo pull make email a prop
 		 * @returns {string} An email link disguised as a button
 		 */
 		mailto ()
@@ -55,11 +56,6 @@ export default {
 	max-width: 200px;
 	min-width: 100px;
 	width: auto;
-
-	span {
-		color: @myblack;
-	}
 }
-
 </style>
 

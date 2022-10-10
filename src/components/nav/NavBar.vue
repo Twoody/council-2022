@@ -21,7 +21,16 @@ The general navbar for our project
 				<font-awesome-icon icon="fa-sharp fa-solid fa-ban" />Tolling
 			</router-link>
 		</div>
-		<EmailButton />
+		<div class="flex-col">
+			<EmailButton
+				:email="'Tanner.L.Woody@gmail.com?subject=I will vote for woody&body=Please authenticate yourself with a full name and residing West Linn Neighborhood'"
+			>
+				<span class="color-my-black font-size-">ENDORSE</span>
+			</EmailButton>
+			<EmailButton>
+				<span class="color-my-black font-size-">EMAIL</span>
+			</EmailButton>
+		</div>
 	</div>
 </template>
 
@@ -62,6 +71,14 @@ export default {
 			margin: 5px;
 			text-decoration: none;
 		}
+	}
+	.flex-col {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: end;
+		max-width: min(35%, 200px);
+		width: 100%;
 	}
 }
 a {

@@ -35,6 +35,7 @@
 			class="main-section"
 			is-showing
 		>
+
 			<router-view
 				v-slot="{ Component }"
 			>
@@ -100,8 +101,31 @@
 				</div>
 			</div>
 		</div>
+		<DialogsWrapper />
 	</div>
 </template>
+
+<script setup>
+import InfoModal from "./components/modals/InfoModal.vue"
+import { createConfirmDialog } from "vuejs-confirm-dialog"
+import { ref } from "vue"
+
+const showDialog = ref(true)
+
+const { reveal, onConfirm, } = createConfirmDialog(
+	InfoModal,
+	{
+		header: "Election Information",
+	}
+)
+
+onConfirm(() => 
+{
+	showDialog.value = false
+})
+
+reveal()
+</script>
 
 <script>
 import { getAnalytics, logEvent } from "firebase/analytics"
@@ -184,7 +208,6 @@ export default {
 			console.error("Could not connect to firebase")
 			console.error(e)
 		}
-
 	},
 	beforeDestroy: function()
 	{
