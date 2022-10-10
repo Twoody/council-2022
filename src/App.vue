@@ -51,11 +51,22 @@
 			</router-view>
 		</AppSection>
 		<div class="bottom-banner">
+			<font-awesome-icon
+				aria-label="Open Important Modal"
+				class="triangle"
+				icon="fa-sharp fa-exclamation-triangle" 
+				role="button"
+				tabindex="0"
+				@click="reveal"
+				@keyup="revealKeyup"
+			/>
+
 			<div class="flex-box cheat">
 				<div class="flex-item">
 					<MyButton
 						class="footer-button"
 						pill
+						tabindex="-1"
 					>
 						<a
 							class="linked"
@@ -68,6 +79,7 @@
 					<MyButton
 						class="footer-button"
 						pill
+						tabindex="-1"
 					>
 						<a
 							class="linked"
@@ -80,6 +92,7 @@
 					<MyButton
 						class="footer-button"
 						pill
+						tabindex="-1"
 					>
 						<a
 							class="linked"
@@ -123,8 +136,6 @@ onConfirm(() =>
 {
 	showDialog.value = false
 })
-
-reveal()
 </script>
 
 <script>
@@ -166,7 +177,13 @@ export default {
 			],
 		}
 	},
-	computed: {},
+	computed:
+	{
+		version ()
+		{
+			return __APP_VERSION__
+		},
+	},
 	watch:
 	{
 		/**
@@ -176,6 +193,16 @@ export default {
 		{
 			this.$store.commit("setIsShowingBanner", true)
 		},
+	},
+	mounted ()
+	{
+		// Determin if info modal should be shown or not; New version shows modal
+		const oldVersion = localStorage.getItem("version") || 0
+		if (oldVersion !== this.version)
+		{
+			localStorage.setItem("version", this.version)
+			this.reveal()
+		}
 	},
 	created: function()
 	{
@@ -201,7 +228,6 @@ export default {
 			const app = initializeApp(firebaseConfig)
 			const analytics = getAnalytics(app)
 			logEvent(analytics, "site_view")
-
 		}
 		catch (e)
 		{
@@ -260,6 +286,18 @@ export default {
 			this.$store.commit( "setBannerMessage", "")
 		},
 
+		/**
+		 * If pressing enter, show the info modal
+		 *
+		 * @param e
+		 */
+		revealKeyup (e)
+		{
+			if (e.keyCode === 13)
+			{
+				this.reveal()
+			}
+		},
 	},
 }
 </script>
@@ -292,15 +330,29 @@ html, body {
 
 }
 .bottom-banner {
-	align-items: center;
 	background-color: @color-third-background;
 	bottom: 0;
 	display: flex;
 	height: 50px;
-	justify-content: center;
+	flex-wrap: nowrap;
 	width: 100%;
 
+	.triangle {
+		color: red;
+		font-size: 24px;
+		margin-top: 9px;
+		margin-left: 9px;
+		transition: all 0.25s;
+		&:hover {
+			font-size: 30px;
+		}
+	}
 	.flex-box {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
 		&.cheat {
 			font-size: 12px;
 			max-width: 100%;

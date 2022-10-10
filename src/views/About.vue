@@ -74,7 +74,7 @@
 							</a>
 						</li>
 						<li>
-							Concerned Citizens:
+							Engaged Citizens:
 							<ul>
 								<li>
 									Willie Hughey
@@ -119,7 +119,7 @@
 			</div>
 		</section>
 		<section id="family">
-			<div class="content-section even-section hero">
+			<div class="content-section even-section hero" title="Tanner Woody at Wedding">
 				<h2>Family</h2>
 				<div class="flex-box">
 					<p class="flex-item">
@@ -145,13 +145,33 @@
 			</div>
 		</section>
 		<section id="dogs">
-			<div class="content-section odd-section hero hero-2">
+			<div class="content-section odd-section hero hero-2" title="Running Mates">
 				<h2>Dogs</h2>
+				<div class="flex-box">
+					<p class="flex-item">
+						Meet Tanner Woody's "running mates": Ruby and Bro'Dee.
+					</p>
+					<p class="flex-item">
+						These two are rescues from Texas and Iowa, respectively.
+					</p>
+				</div>
 			</div>
 		</section>
 		<section id="cat">
-			<div class="content-section even-section hero hero-3">
+			<div class="content-section even-section hero hero-3" title="Cat Portrait">
 				<h2>Cat</h2>
+				<div class="flex-box">
+					<p class="flex-item">
+						Kouldbie has been saved in multiple ways.
+					</p>
+					<p class="flex-item">
+						She was first saved by
+						Betsy when she was a lost kitten in the Dominican Republic.
+						She was then saved when she was hit by a rock and lost her eye.
+						Finally, she was saved by a one-way ticket to the USA from the 
+						Dominican Republic.
+					</p>
+				</div>
 			</div>
 		</section>
 	</div>
@@ -226,10 +246,10 @@ export default {
 			}
 		}
 		&.hero-2 {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-dogs.jpg?alt=media&token=42d00ac1-3511-4996-b9b3-43304b62149e");
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-dogs.jpg?alt=media&token=42d00ac1-3511-4996-b9b3-43304b62149e");
 		}
 		&.hero-3 {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-cat.jpg?alt=media&token=8f26f2ba-c511-4908-a204-e01012b24b28");
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/tanner-woody-cat.jpg?alt=media&token=8f26f2ba-c511-4908-a204-e01012b24b28");
 		}
 	}
 	h1 {

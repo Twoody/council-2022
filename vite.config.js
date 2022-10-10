@@ -74,5 +74,8 @@ export default defineConfig({
 				rewrite: (path) => path.replace(/^\/api/, "")
 			}
 		}
+	},
+	define: {
+		'__APP_VERSION__': JSON.stringify(process.env.npm_package_version),
 	}
 });

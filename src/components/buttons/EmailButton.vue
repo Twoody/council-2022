@@ -2,6 +2,7 @@
 	<MyButton
 		class="email-button"
 		pill
+		tabindex="-1"
 	>
 		<a
 			class="linked"

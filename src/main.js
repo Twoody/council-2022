@@ -16,6 +16,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { faClipboard } from "@fortawesome/free-solid-svg-icons"
 import { faClipboardList } from "@fortawesome/free-solid-svg-icons"
 import { faCopyright } from "@fortawesome/free-solid-svg-icons"
+import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons"
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { faGoogle } from "@fortawesome/free-brands-svg-icons"
 import { faSpinner } from "@fortawesome/free-solid-svg-icons/faSpinner"
@@ -30,6 +31,7 @@ library.add(faChevronRight)
 library.add(faClipboard)
 library.add(faClipboardList)
 library.add(faCopyright)
+library.add(faExclamationTriangle )
 library.add(faFacebook)
 library.add(faGoogle)
 library.add(faSpinner)

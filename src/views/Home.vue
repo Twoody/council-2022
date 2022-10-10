@@ -1,7 +1,7 @@
 <template>
 	<div class="home-wrapper">
 		<section id="flyer">
-			<div class="hero flex-box">
+			<div class="hero flex-box" title="West Linn Flyer">
 				<h2 class="flex-item">
 					Hi, I am Tanner Woody.
 				</h2>
@@ -37,9 +37,10 @@
 						Tanner will provide that representation.
 					</p>
 					<p class="flex-item">
-						Currently, Tanner is an active member of the Bolton Neighborhood Association and on
-						the Tax Increment Financing (TIF) Advisory Committee. We need to extend this
-						representation to the City Council itself, to make ODOT work for us.
+						Currently, Tanner is an active member of the Bolton Neighborhood Association
+						and on the Tax Increment Financing (TIF) Advisory Committee.
+						We need to extend this representation to the City Council itself,
+						to make ODOT work for us.
 					</p>
 				</div>
 			</div>
@@ -79,7 +80,7 @@
 				</div>
 			</div>
 		</section>
-		<div class="hero hero-2 odd-section flex-box"/>
+		<div class="hero hero-2 odd-section flex-box" title="Meet Tanner Woody"/>
 		<section id="equality">
 			<div class="accordion-sections even-section">
 				<h2>
@@ -100,7 +101,7 @@
 			</div>
 		</section>
 		<section id="environment">
-			<div class="accordion-sections odd-section hero hero-3">
+			<div class="accordion-sections odd-section hero hero-3" title="Tanner Woody and Wife">
 				<h2>
 					Environment
 				</h2>
@@ -112,8 +113,8 @@
 						SOLVE and community involvement display the importance of these assets. 
 					</p>
 					<p class="flex-item">
-						Tanner will work with our existing council, ODOT, P&amp;R, and community to maintain
-						and preserve our parks and recreational facilities.
+						Tanner will work with our existing council, ODOT, P&amp;R, and community
+						to maintain and preserve our parks and recreational facilities.
 					</p>
 				</div>
 			</div>

@@ -1,8 +1,19 @@
 <template>
-	<div class="modal-container">
-		<div class="modal-body">
-			<h2>{{ header }}</h2>
-			<p>
+	<div
+		aria-describedby="dialogDesc"
+		aria-labelledby="dialogTitle"
+		aria-modal="true"
+		class="modal-container"
+		role="alertdialog"
+	>
+		<div
+			role="document"
+			class="modal-body"
+		>
+			<h2 id="dialogTitle">
+				{{ header }}
+			</h2>
+			<p id="dialogDesc">
 				The City Council election has been moved to:
 				<br><strong>March 2023</strong>.
 			</p>
