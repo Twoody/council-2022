@@ -77,10 +77,13 @@
 							Engaged Citizens:
 							<ul>
 								<li>
-									Willie Hughey
+									Bill Gilbert
 								</li>
 								<li>
-									Bill Gilbert
+									Dave Pitzer
+								</li>
+								<li>
+									Willie Hughey
 								</li>
 							</ul>
 						</li>
