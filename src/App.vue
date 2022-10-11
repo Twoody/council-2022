@@ -136,6 +136,16 @@ onConfirm(() =>
 {
 	showDialog.value = false
 })
+
+// Determin if info modal should be shown or not; New version shows modal
+const oldVersion = localStorage.getItem("version") || 0
+const curVersion = __APP_VERSION__
+if (oldVersion !== curVersion)
+{
+	localStorage.setItem("version", curVersion)
+	reveal()
+}
+
 </script>
 
 <script>
@@ -177,13 +187,6 @@ export default {
 			],
 		}
 	},
-	computed:
-	{
-		version ()
-		{
-			return __APP_VERSION__
-		},
-	},
 	watch:
 	{
 		/**
@@ -196,13 +199,6 @@ export default {
 	},
 	mounted ()
 	{
-		// Determin if info modal should be shown or not; New version shows modal
-		const oldVersion = localStorage.getItem("version") || 0
-		if (oldVersion !== this.version)
-		{
-			localStorage.setItem("version", this.version)
-			this.reveal()
-		}
 	},
 	created: function()
 	{
