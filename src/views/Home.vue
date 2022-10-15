@@ -1,12 +1,42 @@
 <template>
 	<div class="home-wrapper">
 		<section id="flyer">
-			<div class="hero flex-box" title="West Linn Flyer">
+			<div
+				class="hero flex-box"
+				title="West Linn Flyer"
+			>
 				<h2 class="flex-item">
 					Hi, I am Tanner Woody.
 				</h2>
 			</div>
 		</section>
+		<!-- Table of Contents -->
+		<div
+			aria-labelledby="toc-heading"
+			class="accordion-sections odd-section toc"
+			role="navigation"
+		>
+			<h2 id="toc-heading">
+				Contents
+			</h2>
+			<ol>
+				<li><a href="#platform">
+					Platform
+				</a></li>
+				<li><a href="#tolling">
+					Tolling
+				</a></li>
+				<li><a href="#economy">
+					Economy
+				</a></li>
+				<li><a href="#equality">
+					Equality
+				</a></li>
+				<li><a href="#environment">
+					Environment
+				</a></li>
+			</ol>
+		</div>
 		<section id="platform">
 			<div class="accordion-sections even-section">
 				<h2>
@@ -131,7 +161,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 @import "../../assets/styles/styles";
 .home-wrapper {
 	display: flex;
@@ -162,6 +192,10 @@ export default {
 			margin-right: 17px;
 			text-align: left;
 		}
+		&.toc {
+			padding: 0px;
+			margin: 0px;
+		}
 	}
 	.hero {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://firebasestorage.googleapis.com/v0/b/council-95b50.appspot.com/o/banner.png?alt=media&token=72193d8d-4eca-4739-9c04-b7b852100ca7");
@@ -177,6 +211,7 @@ export default {
 		margin-bottom: 21px;
 
 		a {
+			font-color: @myblack;
 			font-size: 38px;
 			font-weight: 900;
 			text-transform: uppercase;
@@ -196,6 +231,13 @@ export default {
 		margin-bottom: 0;
 		min-height: 911px;
 	}
-
+	ol {
+		text-align: left;
+	}
+}
+#toc-heading {
+	font-size: clamp(24px, 3vw, 35px);
+	padding: 0;
+	margin: 0;
 }
 </style>

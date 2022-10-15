@@ -21,14 +21,7 @@
 		</AppSection>
 		-->
 
-		<!-- Handle appSection click for navbar on chevron and ations instead.. -->
-		<AppSection
-			class="nav-section"
-			:isCollapsed="true"
-			is-showing
-		>
-			<NavBar id="nav-wrapper" />
-		</AppSection>
+		<NavBar id="nav-wrapper" />
 
 		<AppSection
 			centered
@@ -50,65 +43,67 @@
 				</transition>
 			</router-view>
 		</AppSection>
-		<div class="bottom-banner">
-			<font-awesome-icon
-				aria-label="Open Important Modal"
-				class="triangle"
-				icon="fa-sharp fa-exclamation-triangle" 
-				role="button"
-				tabindex="0"
-				@click="reveal"
-				@keyup="revealKeyup"
-			/>
+		<div class="bottom-banner-wrapper">
+			<div class="bottom-banner">
+				<font-awesome-icon
+					aria-label="Open Important Modal"
+					class="triangle"
+					icon="fa-sharp fa-exclamation-triangle" 
+					role="button"
+					tabindex="0"
+					@click="reveal"
+					@keyup="revealKeyup"
+				/>
 
-			<div class="flex-box cheat">
-				<div class="flex-item">
-					<MyButton
-						class="footer-button"
-						pill
-						tabindex="-1"
-					>
-						<a
-							class="linked"
-							:href="facebook"
-							target="_blank"
+				<div class="flex-box cheat">
+					<div class="flex-item">
+						<MyButton
+							class="footer-button"
+							pill
+							tabindex="-1"
 						>
-							<span>Facebook</span>
-						</a>
-					</MyButton>
-					<MyButton
-						class="footer-button"
-						pill
-						tabindex="-1"
-					>
-						<a
-							class="linked"
-							:href="instagram"
-							target="_blank"
+							<a
+								class="linked"
+								:href="facebook"
+								target="_blank"
+							>
+								<span>Facebook</span>
+							</a>
+						</MyButton>
+						<MyButton
+							class="footer-button"
+							pill
+							tabindex="-1"
 						>
-							<span>Instagram</span>
-						</a>
-					</MyButton>
-					<MyButton
-						class="footer-button"
-						pill
-						tabindex="-1"
-					>
-						<a
-							class="linked"
-							:href="github"
-							target="_blank"
+							<a
+								class="linked"
+								:href="instagram"
+								target="_blank"
+							>
+								<span>Instagram</span>
+							</a>
+						</MyButton>
+						<MyButton
+							class="footer-button"
+							pill
+							tabindex="-1"
 						>
-							<span>Edit this Page</span>
-						</a>
-					</MyButton>
-				</div>
-				<div class="flex-item">
-					<div class="flex-box cheat">
-						<div class="flex-item">
-							Copyright
-							<font-awesome-icon icon="fa fa-copyright" />
-							2022 Tanner Woody All Rights Reserved
+							<a
+								class="linked"
+								:href="github"
+								target="_blank"
+							>
+								<span>Edit this Page</span>
+							</a>
+						</MyButton>
+					</div>
+					<div class="flex-item">
+						<div class="flex-box cheat">
+							<div class="flex-item">
+								Copyright
+								<font-awesome-icon icon="fa fa-copyright" />
+								2022 Tanner Woody All Rights Reserved
+							</div>
 						</div>
 					</div>
 				</div>
@@ -325,33 +320,49 @@ html, body {
 	width: 100%;
 
 }
-.bottom-banner {
+.bottom-banner-wrapper {
+	align-items: center;
 	background-color: @color-third-background;
 	bottom: 0;
 	display: flex;
-	height: 50px;
 	flex-wrap: nowrap;
+	justify-content: center;
+	height: 50px;
 	width: 100%;
 
-	.triangle {
-		color: red;
-		font-size: 24px;
-		margin-top: 9px;
-		margin-left: 9px;
-		transition: all 0.25s;
-		&:hover {
-			font-size: 30px;
+	.bottom-banner {
+		a {
+			font-weight: bold;
+			color: @color-third-font;
 		}
-	}
-	.flex-box {
 		align-items: center;
 		display: flex;
+		flex-wrap: nowrap;
 		justify-content: center;
+		max-width: @maxwidth;
 		width: 100%;
 
-		&.cheat {
-			font-size: 12px;
-			max-width: 100%;
+		.triangle {
+			align-self: flex-start;
+			color: red;
+			font-size: 24px;
+			margin-top: 9px;
+			margin-left: 9px;
+			transition: all 0.25s;
+			&:hover {
+				font-size: 30px;
+			}
+		}
+		.flex-box {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+
+			&.cheat {
+				font-size: 12px;
+				max-width: 100%;
+			}
 		}
 	}
 }
@@ -364,12 +375,13 @@ html, body {
 	flex: 1;
 	max-height: 4000px !important;
 }
-.nav-section {
-	min-height: 70px;
-}
 
 #nav-wrapper {
 	background-color: @color-third-background;
+	flex-grow: 0;
+	margin: 0;
+	min-height: 70px;
+	padding: 0;
 }
 
 #top-banner {

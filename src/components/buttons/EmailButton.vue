@@ -51,6 +51,11 @@ export default {
 <style scoped lang="less">
 @import "../../../assets/styles/styles";
 .email-button {
+	a {
+		font-weight: bold;
+		color: @color-third-font;
+	}
+
 	min-height: 32px;
 	margin-left: 10px;
 	margin-right: 10px;

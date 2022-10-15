@@ -3,6 +3,36 @@
 		<div class="content-section even-section">
 			<h1>About Tanner Woody</h1>
 		</div>
+		<!-- Table of Contents -->
+		<div
+			aria-labelledby="toc-heading"
+			class="content-section even-section toc"
+			role="navigation"
+		>
+			<h2 id="toc-heading">
+				Contents
+			</h2>
+			<ol>
+				<li><a href="#endorsements">
+					Endorsements
+				</a></li>
+				<li><a href="#credentials">
+					Credentials
+				</a></li>
+				<li><a href="#engineer">
+					The Site
+				</a></li>
+				<li><a href="#family">
+					Family
+				</a></li>
+				<li><a href="#dogs">
+					Dogs
+				</a></li>
+				<li><a href="#cat">
+					Cat
+				</a></li>
+			</ol>
+		</div>
 		<section id="endorsements">
 			<div class="content-section odd-section">
 				<h2>Endorsements</h2>
@@ -222,6 +252,13 @@ export default {
 		padding-top: 20px;
 		width: 100%;
 
+		&.toc {
+			h2 {
+				margin: 0;
+			}
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
 		.flex-box {
 			margin-left: 17px;
 			margin-right: 17px;
@@ -263,6 +300,8 @@ export default {
 		text-transform: uppercase;
 		width: 100%;
 	}
-
+	ol {
+		text-align: left;
+	}
 }
 </style>

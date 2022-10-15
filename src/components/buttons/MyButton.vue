@@ -310,5 +310,6 @@ export default
 		filter: brightness(73%);
 	}
 }
+
 </style>
 
