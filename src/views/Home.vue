@@ -10,7 +10,7 @@
 				</h2>
 			</div>
 		</section>
-				<TableOfContents :contents="CONTENTS_HOME" />
+		<TableOfContents :contents="CONTENTS_HOME" />
 
 		<section id="platform">
 			<div class="accordion-sections even-section">

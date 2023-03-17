@@ -18,7 +18,15 @@
 			class="main-section"
 			is-showing
 		>
-
+			<!-- TODO: Setup to pull info from vuex -->
+			<DialogModal :visible="isModalOpen" @close="isModalOpen = false">
+				<h2>Election is Over!</h2>
+				<p>It has been a long few months since November!</p>
+				<p>Thank you all for your support and votes!</p>
+				<button @click="isModalOpen = false">
+					Close
+				</button>
+			</DialogModal>
 			<router-view
 				v-slot="{ Component }"
 			>
@@ -88,19 +96,6 @@
 	</div>
 </template>
 
-<script setup>
-
-// Determin if info modal should be shown or not; New version shows modal
-const oldVersion = localStorage.getItem("version") || 0
-const curVersion = window.__APP_VERSION__
-if (oldVersion !== curVersion)
-{
-	localStorage.setItem("version", curVersion)
-	this.handleModal()
-}
-
-</script>
-
 <script>
 import { getAnalytics, logEvent } from "firebase/analytics"
 import { initializeApp } from "firebase/app"
@@ -111,6 +106,7 @@ import {URLS} from "constants/urls.js"
 
 import AppSection from "components/common/AppSection"
 import Copyright from "components/Copyright"
+import DialogModal from "components/modals/DialogModal.vue"
 import MyButton from "components/buttons/MyButton"
 import NavBar from "components/nav/NavBar"
 
@@ -120,6 +116,7 @@ export default {
 	{
 		AppSection,
 		Copyright,
+		DialogModal,
 		MyButton,
 		NavBar,
 		SchemaOrgOrganization,
@@ -155,6 +152,7 @@ export default {
 	},
 	mounted ()
 	{
+		this.showModalIfNewVersion()
 	},
 	created: function()
 	{
@@ -164,28 +162,7 @@ export default {
 		window.addEventListener("online", this.handleEventOnline)
 		window.addEventListener("offline", this.handleEventOffline)
 
-		try
-		{
-			const firebaseConfig = {
-				apiKey: "AIzaSyC-LnFGpldNIKPux-76PQBR1Z8WDYCGsGg",
-				appId: "1:356255366027:web:c227462d21918bbdff0d8e",
-				authDomain: "council-95b50.firebaseapp.com",
-				measurementId: "G-CBR0Q6TPKP",
-				messagingSenderId: "356255366027",
-				projectId: "council-95b50",
-				storageBucket: "council-95b50.appspot.com",
-			}
-
-			// Get a Firestore instance
-			const app = initializeApp(firebaseConfig)
-			const analytics = getAnalytics(app)
-			logEvent(analytics, "site_view")
-		}
-		catch (e)
-		{
-			console.error("Could not connect to firebase")
-			console.error(e)
-		}
+		this.setupFirebase()
 	},
 	beforeDestroy: function()
 	{
@@ -239,30 +216,67 @@ export default {
 		},
 
 		/**
-		 * @returns {void} - Currently does nothing as need to remove self from vue-confirm
+		 * @returns {void} - Set global modal to open
 		 */
-		handleModal () 
+		openModal () 
 		{
-			if (!this.isModalOpen) 
-			{
-				this.isModalOpen = true
-			}
-			else 
-			{
-				this.isModalOpen = false
-			}
+			console.log("opening")
+			this.isModalOpen = true
 		},
 
 		/**
-		 * If pressing enter, show the info modal
 		 *
-		 * @param e
+		 * @param {number} e - Keycode that was pressed
+		 * @returns {void} - If pressing enter, show the info modal
 		 */
 		revealKeyup (e)
 		{
 			if (e.keyCode === 13)
 			{
-				this.handleModal()
+				this.openModal()
+			}
+		},
+
+		/** @returns {void} - Setup firebase configuration */
+		setupFirebase () 
+		{
+			try
+			{
+				const firebaseConfig = {
+					apiKey: "AIzaSyC-LnFGpldNIKPux-76PQBR1Z8WDYCGsGg",
+					appId: "1:356255366027:web:c227462d21918bbdff0d8e",
+					authDomain: "council-95b50.firebaseapp.com",
+					measurementId: "G-CBR0Q6TPKP",
+					messagingSenderId: "356255366027",
+					projectId: "council-95b50",
+					storageBucket: "council-95b50.appspot.com",
+				}
+
+				// Get a Firestore instance
+				const app = initializeApp(firebaseConfig)
+				const analytics = getAnalytics(app)
+				logEvent(analytics, "site_view")
+			}
+			catch (e)
+			{
+				console.error("Could not connect to firebase")
+				console.error(e)
+			}
+		},
+
+		/** 
+		 * @returns {void} - Determin if info modal should be shown or not; New version shows modal
+		 */
+		showModalIfNewVersion () 
+		{
+			const oldVersion = localStorage.getItem("version") || 0
+			const curVersion = window.__APP_VERSION__
+
+			console.log(oldVersion, " ::: ", curVersion)
+			if (oldVersion !== curVersion)
+			{
+				localStorage.setItem("version", curVersion)
+				this.openModal()
 			}
 		},
 	},
