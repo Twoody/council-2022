@@ -55,6 +55,7 @@ export default {
 		display: flex;
 		flex-gap: 11px;
 		flex-wrap: wrap;
+		font-size: clamp(17px, 2vw, 20px);
 		justify-content: center;
 
 		li {
