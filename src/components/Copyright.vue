@@ -15,13 +15,11 @@ export default {
 	computed:
 	{
 		/**
-		 * @todo Install datetime package
 		 * @returns {string} Year in yyyy format
 		 */
 		formattedYear ()
 		{
-			// return DateTime.local().toFormat('yyyy')
-			return "2023"
+			return DateTime.local().toFormat('yyyy')
 		},
 	},
 }
