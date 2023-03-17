@@ -1,5 +1,5 @@
 <template>
-	<div class='copyright-wrapper'>
+	<div class="copyright-wrapper">
 		Copyright
 		<font-awesome-icon icon="fa fa-copyright" />&nbsp;
 		{{ formattedYear }}
@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import {DateTime} from 'luxon'
+import {DateTime} from "luxon"
 
 export default {
-	name: 'Copyright',
+	name: "Copyright",
 	computed:
 	{
 		/**
@@ -20,9 +20,9 @@ export default {
 		 */
 		formattedYear ()
 		{
-			//return DateTime.local().toFormat('yyyy')
+			// return DateTime.local().toFormat('yyyy')
 			return "2023"
-		}
+		},
 	},
 }
 </script>

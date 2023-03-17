@@ -9,7 +9,6 @@
 			</div>
 		</section>
 
-
 		<section id="platform">
 			<div class="accordion-sections even-section">
 				<h2>
