@@ -57,20 +57,7 @@ module.exports = {
 						"svg": "always",
 					}
 				],
-				"vue/multi-word-component-names": ["error", {
-					"ignores": [
-						'About',
-						'Accordion',
-						'Amenities',
-						'Filters',
-						'Foobar',
-						'Home',
-						'Login',
-						'Maps',
-						'Signup',
-						'Spinner',
-						'Validatable',
-					]
+				"vue/multi-word-component-names": ["off", {
 				}],
 				"vue/no-multi-spaces": [
 					"error",

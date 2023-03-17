@@ -1,3 +1,4 @@
+TODO: Move into a more traditional TModal
 <template>
 	<div
 		aria-describedby="dialogDesc"

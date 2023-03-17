@@ -5,9 +5,12 @@
 				class="hero flex-box"
 				title="West Linn Flyer"
 			>
-				<TableOfContents :contents="CONTENTS_HOME" />
+				<h2 class="flex-item">
+					Hi, I am Tanner Woody.
+				</h2>
 			</div>
 		</section>
+				<TableOfContents :contents="CONTENTS_HOME" />
 
 		<section id="platform">
 			<div class="accordion-sections even-section">

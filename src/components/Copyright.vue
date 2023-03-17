@@ -19,7 +19,7 @@ export default {
 		 */
 		formattedYear ()
 		{
-			return DateTime.local().toFormat('yyyy')
+			return DateTime.local().toFormat("yyyy")
 		},
 	},
 }

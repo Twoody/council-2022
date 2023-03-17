@@ -35,16 +35,6 @@
 		</AppSection>
 		<div class="bottom-banner-wrapper">
 			<div class="bottom-banner">
-				<font-awesome-icon
-					aria-label="Open Important Modal"
-					class="triangle"
-					icon="fa-sharp fa-exclamation-triangle" 
-					role="button"
-					tabindex="0"
-					@click="reveal"
-					@keyup="revealKeyup"
-				/>
-
 				<div class="flex-box cheat">
 					<div class="flex-item">
 						<MyButton
@@ -99,31 +89,14 @@
 </template>
 
 <script setup>
-import { createConfirmDialog } from "vuejs-confirm-dialog"
-import { ref } from "vue"
-import InfoModal from "components/modals/InfoModal"
-
-const showDialog = ref(true)
-
-const { reveal, onConfirm, } = createConfirmDialog(
-	InfoModal,
-	{
-		header: "Election Information",
-	}
-)
-
-onConfirm(() => 
-{
-	showDialog.value = false
-})
 
 // Determin if info modal should be shown or not; New version shows modal
 const oldVersion = localStorage.getItem("version") || 0
-const curVersion = __APP_VERSION__
+const curVersion = window.__APP_VERSION__
 if (oldVersion !== curVersion)
 {
 	localStorage.setItem("version", curVersion)
-	reveal()
+	this.handleModal()
 }
 
 </script>
@@ -159,6 +132,7 @@ export default {
 			facebook: URLS.SOCIALS.FACEBOOK,
 			github: URLS.__REPO,
 			instagram: URLS.SOCIALS.INSTAGRAM,
+			isModalOpen: false,
 			isNavCollapsed: true,
 			schemaSameAs: [
 				URLS.SOCIALS.GITHUB,
@@ -265,6 +239,21 @@ export default {
 		},
 
 		/**
+		 * @returns {void} - Currently does nothing as need to remove self from vue-confirm
+		 */
+		handleModal () 
+		{
+			if (!this.isModalOpen) 
+			{
+				this.isModalOpen = true
+			}
+			else 
+			{
+				this.isModalOpen = false
+			}
+		},
+
+		/**
 		 * If pressing enter, show the info modal
 		 *
 		 * @param e
@@ -273,7 +262,7 @@ export default {
 		{
 			if (e.keyCode === 13)
 			{
-				this.reveal()
+				this.handleModal()
 			}
 		},
 	},
