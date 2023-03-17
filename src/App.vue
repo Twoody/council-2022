@@ -6,20 +6,10 @@
 			logo="/assets/imgs/council-ice-cream.png"
 			:same-as="schemaSameAs"
 		/>
-		<SchemaOrgWebSite name="Vote Tanner Woody" />
-		<SchemaOrgWebPage />
 
-		<!-- TODO: Tie into vue comps -->
-		<!--
-		<AppSection
-			:isShowing="$store.state.layout.isShowingBanner"
-			@click="$store.commit('setIsShowingBanner', false)"
-		>
-			<div id="top-banner">
-				{{ $store.state.layout.bannerMessage }}
-			</div>
-		</AppSection>
-		-->
+		<SchemaOrgWebSite name="Vote Tanner Woody" />
+
+		<SchemaOrgWebPage />
 
 		<NavBar id="nav-wrapper" />
 
@@ -63,7 +53,6 @@
 							tabindex="-1"
 						>
 							<a
-								class="linked"
 								:href="facebook"
 								target="_blank"
 							>
@@ -76,7 +65,6 @@
 							tabindex="-1"
 						>
 							<a
-								class="linked"
 								:href="instagram"
 								target="_blank"
 							>
@@ -89,7 +77,6 @@
 							tabindex="-1"
 						>
 							<a
-								class="linked"
 								:href="github"
 								target="_blank"
 							>
@@ -100,9 +87,7 @@
 					<div class="flex-item">
 						<div class="flex-box cheat">
 							<div class="flex-item">
-								Copyright
-								<font-awesome-icon icon="fa fa-copyright" />
-								2022 Tanner Woody All Rights Reserved
+								<Copyright />
 							</div>
 						</div>
 					</div>
@@ -114,9 +99,9 @@
 </template>
 
 <script setup>
-import InfoModal from "./components/modals/InfoModal.vue"
 import { createConfirmDialog } from "vuejs-confirm-dialog"
 import { ref } from "vue"
+import InfoModal from "components/modals/InfoModal"
 
 const showDialog = ref(true)
 
@@ -149,17 +134,19 @@ import { initializeApp } from "firebase/app"
 import {SchemaOrgOrganization,
 	SchemaOrgWebPage,
 	SchemaOrgWebSite} from "@vueuse/schema-org/dist/runtime-simple/components/nodes.mjs"
+import {URLS} from "constants/urls.js"
 
 import AppSection from "components/common/AppSection"
+import Copyright from "components/Copyright"
 import MyButton from "components/buttons/MyButton"
 import NavBar from "components/nav/NavBar"
-import {URLS} from "constants/urls.js"
 
 export default {
 	name: "App",
 	components:
 	{
 		AppSection,
+		Copyright,
 		MyButton,
 		NavBar,
 		SchemaOrgOrganization,

@@ -5,38 +5,11 @@
 				class="hero flex-box"
 				title="West Linn Flyer"
 			>
-				<h2 class="flex-item">
-					Hi, I am Tanner Woody.
-				</h2>
+				<TableOfContents :contents="CONTENTS_HOME" />
 			</div>
 		</section>
-		<!-- Table of Contents -->
-		<div
-			aria-labelledby="toc-heading"
-			class="accordion-sections odd-section toc"
-			role="navigation"
-		>
-			<h2 id="toc-heading">
-				Contents
-			</h2>
-			<ol>
-				<li><a href="#platform">
-					Platform
-				</a></li>
-				<li><a href="#tolling">
-					Tolling
-				</a></li>
-				<li><a href="#economy">
-					Economy
-				</a></li>
-				<li><a href="#equality">
-					Equality
-				</a></li>
-				<li><a href="#environment">
-					Environment
-				</a></li>
-			</ol>
-		</div>
+
+
 		<section id="platform">
 			<div class="accordion-sections even-section">
 				<h2>
@@ -75,6 +48,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section id="tolling">
 			<div class="accordion-sections odd-section">
 				<h2>
@@ -153,11 +127,21 @@
 </template>
 
 <script>
+import {CONTENTS_HOME} from "constants/contents.js"
+import TableOfContents from "components/entities/TableOfContents"
 
 export default {
 	name: "Home",
 	components:
-	{},
+	{
+		TableOfContents,
+	},
+	data () 
+	{
+		return {
+			CONTENTS_HOME: CONTENTS_HOME,
+		}
+	},
 }
 </script>
 
@@ -191,10 +175,6 @@ export default {
 			margin-left: 17px;
 			margin-right: 17px;
 			text-align: left;
-		}
-		&.toc {
-			padding: 0px;
-			margin: 0px;
 		}
 	}
 	.hero {
@@ -234,10 +214,5 @@ export default {
 	ol {
 		text-align: left;
 	}
-}
-#toc-heading {
-	font-size: clamp(24px, 3vw, 35px);
-	padding: 0;
-	margin: 0;
 }
 </style>

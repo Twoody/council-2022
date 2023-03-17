@@ -5,7 +5,6 @@
 		tabindex="-1"
 	>
 		<a
-			class="linked"
 			:href="mailto"
 			target="_blank"
 		>

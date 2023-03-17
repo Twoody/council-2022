@@ -3,122 +3,16 @@
 		<div class="content-section even-section">
 			<h1>About Tanner Woody</h1>
 		</div>
-		<!-- Table of Contents -->
-		<div
-			aria-labelledby="toc-heading"
-			class="content-section even-section toc"
-			role="navigation"
-		>
-			<h2 id="toc-heading">
-				Contents
-			</h2>
-			<ol>
-				<li><a href="#endorsements">
-					Endorsements
-				</a></li>
-				<li><a href="#credentials">
-					Credentials
-				</a></li>
-				<li><a href="#engineer">
-					The Site
-				</a></li>
-				<li><a href="#family">
-					Family
-				</a></li>
-				<li><a href="#dogs">
-					Dogs
-				</a></li>
-				<li><a href="#cat">
-					Cat
-				</a></li>
-			</ol>
-		</div>
+
+		<TableOfContents
+			class="even-section"
+			:contents="CONTENTS_ABOUT"
+		/>
+
 		<section id="endorsements">
 			<div class="content-section odd-section">
 				<h2>Endorsements</h2>
-				<div class="flex-box">
-					<ul>
-						<li>
-							<a
-								class="linked"
-								:href="URLS.WEST_LINN.RORY"
-								target="_blank"
-							>
-								City Councilor - Rory Bialostosky
-							</a>
-						</li>
-						<li>
-							<a
-								class="linked"
-								:href="URLS.ENDORSERS.THOMAS_FRANK"
-								target="_blank"
-							>
-								Former City Councilor - Thomas A. Frank 
-							</a>
-						</li>
-						<li>
-							<a
-								class="linked"
-								:href="URLS.WEST_LINN.BOLTON"
-								target="_blank"
-							>
-								Bolton NA Vice President - Erich Kunrath
-							</a>
-						</li>
-						<li>
-							<a
-								class="linked"
-								:href="URLS.WEST_LINN.BOLTON"
-								target="_blank"
-							>
-								Bolton Treasurer - Walt Swan
-							</a>
-						</li>
-						<li>
-							<a
-								class="linked"
-								:href="URLS.ENDORSERS.ALMA_COSTON"
-								target="_blank"
-							>
-								Friends of Maddax Member - Alma Coston
-							</a>
-						</li>
-						<li>
-							<a
-								class="linked"
-								:href="URLS.ENDORSERS.SAFE_AND_HOUND"
-								target="_blank"
-							>
-								Business Owner - Crystal Jayne
-							</a>
-						</li>
-						<li>
-							<a
-								class="linked"
-								:href="URLS.ENDORSERS.DEAN_SUHR"
-								target="_blank"
-							>
-								Vote Before Tolls + No Tolls Army + MLD Foundation -
-								Founder + President -
-								Dean Suhr
-							</a>
-						</li>
-						<li>
-							Engaged Citizens:
-							<ul>
-								<li>
-									Bill Gilbert
-								</li>
-								<li>
-									Dave Pitzer
-								</li>
-								<li>
-									Willie Hughey
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+				<Endorsements />
 			</div>
 		</section>
 		<section id="credentials">
@@ -211,15 +105,22 @@
 </template>
 
 <script>
+import {CONTENTS_ABOUT} from "constants/contents.js"
 import {URLS} from "constants/urls.js"
+import Endorsements from "components/anchors/endorsements/Endorsements"
+import TableOfContents from "components/entities/TableOfContents"
 
 export default {
 	name: "About",
 	components:
-	{},
+	{
+		Endorsements,
+		TableOfContents,
+	},
 	data () 
 	{
 		return {
+			CONTENTS_ABOUT: CONTENTS_ABOUT,
 			URLS: URLS,
 		}
 	},
@@ -237,10 +138,6 @@ export default {
 	flex-direction: column;
 	width: 100%;
 
-	.linked {
-		color: @myblack;
-		font-weight: 900;
-	}
 	.content-section {
 		align-items: center;
 		align-content: center;

@@ -204,9 +204,9 @@
 			>
 				<template #title>
 					<div class="subheader">
-						DEADLINE: ?? 2024 ??
+						DEADLINE: 2024-06-15
 					</div>
-					<h2>IP-41: Vote No-Tolls!</h2>
+					<h2>IP-4: Vote No-Tolls!</h2>
 				</template>
 				<template #content>
 					<div class="flex-box">

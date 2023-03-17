@@ -1,0 +1,53 @@
+<template>
+	<div class="flex-box endorsements-wrapper">
+		<ul>
+			<li
+				v-for="endorser in ENDORSERS.VIP"
+				:key="endorser.id"
+			>
+				<Endorsement
+					:href="endorser.href"
+					:fullname="endorser.fullname"
+					:position="endorser.position"
+				/>
+			</li>
+			<li>
+				Engaged Citizens:
+				<ul>
+					<li
+						v-for="endorser in ENDORSERS.CITIZENS"
+						:key="endorser.id"
+					>
+						<Endorsement
+							:key="endorser.id"
+							:fullname="endorser.fullname"
+						/>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</template>
+
+<script>
+import {ENDORSERS} from "constants/endorsers.js"
+import Endorsement from "components/anchors/endorsements/Endorsement"
+export default {
+	name: "Endorsements",
+	components:
+	{
+		Endorsement,
+	},
+	data () 
+	{
+		return {
+			ENDORSERS: ENDORSERS,
+		}
+	},
+}
+</script>
+
+<style lang="less">
+@import "../../../../assets/styles/styles";
+
+</style>
