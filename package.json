@@ -21,9 +21,7 @@
     "less-loader": "^7.2.1",
     "luxon": "^2.4.0",
     "vue": "^3.2.25",
-    "vue-cal": "^4.2.0",
     "vue-router": "^4.0.13",
-    "vuejs-confirm-dialog": "^0.4.3",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
