@@ -42,7 +42,6 @@ export default defineConfig({
 	// Mandatory pre-built plugin package
 	optimizeDeps: {
 		include: [
-			'vue-cal/dist/vuecal.common.js',
 		],
 	},
 	css: {

@@ -7,7 +7,6 @@ import router from "./router"
 import store from "./store/store.js"
 import { installSchemaOrg } from "@vueuse/schema-org-vite/vite"
 import { URLS } from "constants/urls.js"
-import * as ConfirmDialog from "vuejs-confirm-dialog"
 
 // Fontawesome
 import { faBan } from "@fortawesome/free-solid-svg-icons"
@@ -45,7 +44,6 @@ const app = createApp(App)
 app.use(store)
 app.use(router)
 app.use(head)
-app.use(ConfirmDialog)
 
 app.component("font-awesome-icon", FontAwesomeIcon)
 installSchemaOrg({
