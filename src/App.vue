@@ -19,13 +19,25 @@
 			is-showing
 		>
 			<!-- TODO: Setup to pull info from vuex -->
-			<DialogModal :visible="isModalOpen" @close="isModalOpen = false">
-				<h2>Election is Over!</h2>
-				<p>It has been a long few months since November!</p>
-				<p>Thank you all for your support and votes!</p>
-				<button @click="isModalOpen = false">
-					Close
-				</button>
+			<DialogModal
+				class="election-information"
+				backgroundColor="#80b2e4"
+				bodyColor="#80b2e4"
+				headerColor="#80b2e4"
+				footerColor="#80b2e4"
+				closeButtonLabel="Got it!"
+				:visible="isModalOpen"
+				@close="isModalOpen = false"
+			>
+				<template #title>
+					Election is Over!
+				</template>
+				<template #body>
+					<p>
+						It has been a long few months since November!
+						Thank you all for your support and votes!
+					</p>
+				</template>
 			</DialogModal>
 			<router-view
 				v-slot="{ Component }"
@@ -220,7 +232,6 @@ export default {
 		 */
 		openModal () 
 		{
-			console.log("opening")
 			this.isModalOpen = true
 		},
 
@@ -272,8 +283,7 @@ export default {
 			const oldVersion = localStorage.getItem("version") || 0
 			const curVersion = window.__APP_VERSION__
 
-			console.log(oldVersion, " ::: ", curVersion)
-			if (oldVersion !== curVersion)
+			if (true || oldVersion !== curVersion)
 			{
 				localStorage.setItem("version", curVersion)
 				this.openModal()
@@ -390,14 +400,14 @@ html, body {
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition-duration: 0.2s;
-  transition-property: opacity;
-  transition-timing-function: ease;
+	transition-duration: 0.2s;
+	transition-property: opacity;
+	transition-timing-function: ease;
 }
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0
+	opacity: 0
 }
 .footer-button {
 	span {
