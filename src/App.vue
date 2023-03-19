@@ -283,7 +283,7 @@ export default {
 			const oldVersion = localStorage.getItem("version") || 0
 			const curVersion = window.__APP_VERSION__
 
-			if (true || oldVersion !== curVersion)
+			if (oldVersion !== curVersion)
 			{
 				localStorage.setItem("version", curVersion)
 				this.openModal()
