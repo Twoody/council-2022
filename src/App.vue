@@ -281,7 +281,7 @@ export default {
 		showModalIfNewVersion () 
 		{
 			const oldVersion = localStorage.getItem("version") || 0
-			const curVersion = window.__APP_VERSION__
+			const curVersion = __APP_VERSION__
 
 			if (oldVersion !== curVersion)
 			{
