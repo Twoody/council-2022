@@ -2,7 +2,7 @@
 
 
 	<div class="home-wrapper">
-			<SideMenu />
+			<SideMenu :contents="CONTENTS_HOME" />
 		<section id="flyer">
 			<div
 				class="hero flex-box"
@@ -13,7 +13,6 @@
 				</h2>
 			</div>
 		</section>
-		<TableOfContents :contents="CONTENTS_HOME" />
 
 		<section id="platform">
 			<div class="accordion-sections even-section">
