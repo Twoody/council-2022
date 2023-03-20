@@ -1,5 +1,8 @@
 <template>
+
+
 	<div class="home-wrapper">
+			<SideMenu />
 		<section id="flyer">
 			<div
 				class="hero flex-box"
@@ -130,12 +133,14 @@
 
 <script>
 import {CONTENTS_HOME} from "constants/contents.js"
+import SideMenu from "components/menus/SideMenu"
 import TableOfContents from "components/entities/TableOfContents"
 
 export default {
 	name: "Home",
 	components:
 	{
+		SideMenu,
 		TableOfContents,
 	},
 	data () 
