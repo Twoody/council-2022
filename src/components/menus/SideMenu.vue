@@ -108,20 +108,12 @@ export default {
 
 	&.collapsed {
 		max-height: 36px;
-		max-width: 25px;
+		max-width: 36px;
 
 		.sidebar-nav {
 			opacity: 0;
 			padding: 0;
 			margin: 0;
-			a {
-				padding: 0;
-				margin: 0;
-			}
-			li {
-				margin: 0;
-				padding: 0;
-			}
 		}
 	}
 }
