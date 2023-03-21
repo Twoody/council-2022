@@ -19,7 +19,7 @@ The general navbar for our project
 					class="nav-item"
 					to="/stop-tolling"
 				>
-					<font-awesome-icon icon="fa-sharp fa-solid fa-ban" />Tolling
+					<font-awesome-icon icon="fa-solid fa-ban" />&nbsp;Tolling
 				</router-link>
 			</div>
 			<div class="flex-col action-buttons">

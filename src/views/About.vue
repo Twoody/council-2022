@@ -1,13 +1,9 @@
 <template>
 	<div class="about-wrapper">
+		<SideMenu :contents="CONTENTS_ABOUT" />
 		<div class="content-section even-section">
 			<h1>About Tanner Woody</h1>
 		</div>
-
-		<TableOfContents
-			class="even-section"
-			:contents="CONTENTS_ABOUT"
-		/>
 
 		<section id="endorsements">
 			<div class="content-section odd-section">
@@ -108,14 +104,14 @@
 import {CONTENTS_ABOUT} from "constants/contents.js"
 import {URLS} from "constants/urls.js"
 import Endorsements from "components/anchors/endorsements/Endorsements"
-import TableOfContents from "components/entities/TableOfContents"
+import SideMenu from "components/menus/SideMenu"
 
 export default {
 	name: "About",
 	components:
 	{
 		Endorsements,
-		TableOfContents,
+		SideMenu,
 	},
 	data () 
 	{

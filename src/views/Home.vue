@@ -1,5 +1,7 @@
 <template>
+
 	<div class="home-wrapper">
+		<SideMenu :contents="CONTENTS_HOME" />
 		<section id="flyer">
 			<div
 				class="hero flex-box"
@@ -10,7 +12,6 @@
 				</h2>
 			</div>
 		</section>
-		<TableOfContents :contents="CONTENTS_HOME" />
 
 		<section id="platform">
 			<div class="accordion-sections even-section">
@@ -130,13 +131,13 @@
 
 <script>
 import {CONTENTS_HOME} from "constants/contents.js"
-import TableOfContents from "components/entities/TableOfContents"
+import SideMenu from "components/menus/SideMenu"
 
 export default {
 	name: "Home",
 	components:
 	{
-		TableOfContents,
+		SideMenu,
 	},
 	data () 
 	{

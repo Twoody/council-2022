@@ -11,6 +11,7 @@ import { URLS } from "constants/urls.js"
 // Fontawesome
 import { faBan } from "@fortawesome/free-solid-svg-icons"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons"
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { faClipboard } from "@fortawesome/free-solid-svg-icons"
 import { faClipboardList } from "@fortawesome/free-solid-svg-icons"
@@ -26,6 +27,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 // Font awesome
 library.add(faBan)
 library.add(faCheck)
+library.add(faChevronLeft)
 library.add(faChevronRight)
 library.add(faClipboard)
 library.add(faClipboardList)
