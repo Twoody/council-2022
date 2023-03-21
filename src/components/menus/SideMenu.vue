@@ -1,7 +1,9 @@
 <template>
 	<div
+		aria-labelledby="toc-heading"
 		class="sidebar"
 		:class="{ collapsed: isCollapsed }"
+		role="navigation"
 	>
 		<div
 			class="sidebar-header"
@@ -38,7 +40,7 @@ export default {
 	data () 
 	{
 		return {
-			isCollapsed: false,
+			isCollapsed: true,
 		}
 	},
 	props:
@@ -123,6 +125,5 @@ export default {
 		}
 	}
 }
-
 
 </style>
